@@ -16,8 +16,6 @@ from tqdm.auto import tqdm
 from collections import OrderedDict
 import struct
 
-import random
-
 # for fitting
 from scipy.optimize import curve_fit
 from sklearn.preprocessing import MinMaxScaler
@@ -33,6 +31,23 @@ def binary_file_read(file):
         (data, ) = struct.unpack('>H', data_byte[2*n:2*(n+1)])
         data_list.append(data)
     return data_list
+
+
+def load_data(exp_path):
+    if version == 'v4':
+        filename = [i for i in exp_path.glob("VF*.bin")]
+    elif version == 'v2':
+        filename = [i for i in exp_path.glob("*.bin")]
+    else:
+        raise NotImplemented(f'The code for version {version} of the chip has not been implemented')
+
+    if len(filename) > 0:
+        filename = filename[0]
+    else:
+        print(f'No bin file found in {exp_path}')
+
+    data = binary_file_read(filename)
+    return data
 
 
 def binary_to_numpy(data, f_start, f_end):
@@ -114,6 +129,102 @@ def split_into_n_wells(frame_3d, n=2):
     return top_well, bot_well
 
 
+def binary_to_wells(data):
+    # Get data from the bin file. Split chem/temp and top/bottom wells
+    f_start, f_end = 1, 976  # This is set by Lei somewhere
+    time_vect, frame_3d, temp_vect = binary_to_numpy(data, f_start, f_end)  # build data arrays from the binary file
+
+    n_rows, n_cols, n_time = frame_3d.shape  # find data dimensions: TxNxM = samples x rows of sensors x columns
+    assert n_time != 0, f'Could not find data for experiment {exp_path.stem}. Check the bin files.'
+
+    arr_temp, arr_chem = split_chem_and_temp(frame_3d)  # separate chemical and temperature pixels
+    top_well, bot_well = split_into_n_wells(arr_chem, n=2)  # split top and bottom wells for chemical pixels
+    top_well_temp, bot_well_temp = split_into_n_wells(arr_temp, n=2)  # split top and bottom wells for temp pixels
+
+    exp_data_unprocessed = OrderedDict({
+        'Top Well': {
+            'Time': time_vect,
+            'Chemical Data': top_well,
+            'Temperature Data': top_well_temp,
+        },
+
+        'Bot Well': {
+            'Time': time_vect,
+            'Chemical Data': bot_well,
+            'Temperature Data': bot_well_temp,
+        }
+    })
+    return exp_data_unprocessed
+
+
+def get_initial_data(exp_data_unprocessed):
+    time_vect = exp_data_unprocessed['Top Well']['Time']
+    top_well = exp_data_unprocessed['Top Well']['Chemical Data']
+    bot_well = exp_data_unprocessed['Bot Well']['Chemical Data']
+    top_well_temp = exp_data_unprocessed['Top Well']['Temperature Data']
+    bot_well_temp = exp_data_unprocessed['Bot Well']['Temperature Data']
+
+    if version == 'v2':
+        tsettling_idx = time_to_index([930], time_vect)[0]
+    elif version =='v4':
+        tsettling_idx = time_to_index([900], time_vect)[0]  # TODO not 900. what?
+    else:
+        raise NotImplemented(f'The code for version {version} of the chip has not been implemented')
+
+    time_vect = time_vect[:tsettling_idx]
+    top_well = top_well[:tsettling_idx, :]
+    bot_well = bot_well[:tsettling_idx, :]
+    top_well_temp = top_well_temp[:tsettling_idx, :]
+    bot_well_temp = bot_well_temp[:tsettling_idx, :]
+
+    exp_data_initial = OrderedDict({
+        'Top Well': {
+            'Time': time_vect,
+            'Chemical Data': top_well,
+            'Temperature Data': top_well_temp,
+        },
+
+        'Bot Well': {
+            'Time': time_vect,
+            'Chemical Data': bot_well,
+            'Temperature Data': bot_well_temp,
+        }
+    })
+    return exp_data_initial
+
+
+def get_current_data(exp_data_unprocessed, settled_idx_top, settled_idx_bot, tcurrent):
+    time_vect = exp_data_unprocessed['Top Well']['Time']
+    top_well = exp_data_unprocessed['Top Well']['Chemical Data']
+    bot_well = exp_data_unprocessed['Bot Well']['Chemical Data']
+    top_well_temp = exp_data_unprocessed['Top Well']['Temperature Data']
+    bot_well_temp = exp_data_unprocessed['Bot Well']['Temperature Data']
+
+    tcurrent_idx_top = time_to_index([tcurrent+time_vect[settled_idx_top]], time_vect)[0]
+    tcurrent_idx_bot = time_to_index([tcurrent+time_vect[settled_idx_bot]], time_vect)[0]
+    time_vect_top = time_vect[settled_idx_top:tcurrent_idx_top] - time_vect[settled_idx_top]
+    time_vect_bot = time_vect[settled_idx_bot:tcurrent_idx_bot] - time_vect[settled_idx_bot]
+    top_well = top_well[settled_idx_top:tcurrent_idx_top, :]
+    bot_well = bot_well[settled_idx_bot:tcurrent_idx_bot, :]
+    top_well_temp = top_well_temp[settled_idx_top:tcurrent_idx_top, :]
+    bot_well_temp = bot_well_temp[settled_idx_bot:tcurrent_idx_bot, :]
+
+    exp_data_current = OrderedDict({
+        'Top Well': {
+            'Time': time_vect_top,
+            'Chemical Data': top_well,
+            'Temperature Data': top_well_temp,
+        },
+
+        'Bot Well': {
+            'Time': time_vect_bot,
+            'Chemical Data': bot_well,
+            'Temperature Data': bot_well_temp,
+        }
+    })
+    return exp_data_current
+
+
 def filter_by_vref(X, v_thresh=70):
     '''
     Identifies active pixels by checking if one of the first 10 derivatives d(i) is > v_thresh
@@ -183,7 +294,7 @@ def time_to_index(times, time_vect):
     return indices
 
 
-def find_loading_time(time_vect, X, bounds=(600, 900), viz=False):
+def find_loading_time(time_vect, X, bounds=(600, 900), viz=False):  # for v2
     '''
 
     Parameters
@@ -241,7 +352,7 @@ def find_loading_time(time_vect, X, bounds=(600, 900), viz=False):
     return loading_index, loading_time
 
 
-def find_settled_time(time_vect, temp, viz=False):
+def find_settled_time(time_vect, temp, viz=False):  # for v4
     temp_mean = np.mean(temp, axis=1)
     threshold = temp_mean[0]+0.95*(temp_mean[-1]-temp_mean[0])
     settled_idx = np.argmax(temp_mean > threshold)
@@ -456,41 +567,6 @@ def decaying_exp_pos(x, b):
     return 1-np.exp(-b * x)
 
 
-def fit_pixels_old(time, X, idx_active, interpolate_idx, extrapolate_idx, drift_idx, thresh_active=12):  # or 10
-    idx_active_fit = np.array(np.zeros(X.shape[1]), dtype=bool)
-    fit_error = np.array(np.zeros((extrapolate_idx, X.shape[1])))
-
-    # for every pixel
-    for i in range(X.shape[1]):
-        if idx_active[i]:  # if the pixel is active...
-            data = filtfilt(b=np.ones(10) / 10, a=[1], x=X[:, i])
-            drift = data[drift_idx] - data[0]
-            drift_magnitude = np.abs(drift)  # Find drift magnitude (in V)
-
-            time, data = time.reshape(-1, 1), data.reshape(-1, 1)  # Reshape time and data for scikit-learn functions
-            x_scaler, y_scaler = MinMaxScaler(), MinMaxScaler()  # Normalise x, y data for curve fitting
-            time_scaled, data_scaled = x_scaler.fit_transform(time), y_scaler.fit_transform(data)  # TODO ora normalised tutto. invece normalise solo quello che dopo viene fitted (fino a b0)
-
-            time_scaled, data_scaled = time_scaled.reshape(-1), data_scaled.reshape(-1)  # Reshape time and data for scipy functions
-            # Fit the curve (i.e. interpolate/extrapolate)
-            try:
-                # popt, pcov = curve_fit(decaying_exp_neg, time_scaled[:b0], data_scaled[:b0]) if drift <= 0 else curve_fit(decaying_exp_pos, time_scaled[:b0], data_scaled[:b0])
-                popt, pcov = curve_fit(decaying_exp_neg, time_scaled[:interpolate_idx], data_scaled[:interpolate_idx]) if drift <= 0 else curve_fit(decaying_exp_pos, time_scaled[:interpolate_idx], data_scaled[:interpolate_idx])
-                if drift_magnitude != 0 and popt < 100:
-                    data_scaled_fit = decaying_exp_neg(time_scaled[:extrapolate_idx], *popt) if drift <= 0 else decaying_exp_pos(time_scaled[:extrapolate_idx], *popt)
-                    fit_error[:, i] = np.abs(data_scaled[:extrapolate_idx] - data_scaled_fit)*drift_magnitude  # Fit error scaled with drift magnitude of input
-                    idx_active_fit[i] = (fit_error[:, i] < thresh_active).all()
-                else:
-                    idx_active_fit[i] = False
-            except:
-                print('except: could not fit this pixel')
-                idx_active_fit[i] = False
-        else:
-            idx_active_fit[i] = False
-    idx_active = idx_active & idx_active_fit
-    return idx_active, fit_error
-
-
 def fit_pixels_interpolate(time, X, idx_active, interpolate_idx, drift_idx, popt0=None):  #popt0=ones(length(xshape1))
     popt = np.array(np.zeros(X.shape[1]))  # modify for fitting with more parameters
 
@@ -553,176 +629,6 @@ def fit_pixels_extrapolate(time, X, idx_active, extrapolate_idx, drift_idx, popt
     return idx_active, fit_error
 
 
-def load_data(exp_path):
-    if version == 'v4':
-        filename = [i for i in exp_path.glob("VF*.bin")]
-    elif version == 'v2':
-        filename = [i for i in exp_path.glob("*.bin")]
-    else:
-        raise NotImplemented(f'The code for version {version} of the chip has not been implemented')
-
-    if len(filename) > 0:
-        filename = filename[0]
-    else:
-        print(f'No bin file found in {exp_path}')
-
-    data = binary_file_read(filename)
-    return data
-
-
-def preprocessing_old(exp_path, data, visualise=False, visualise_final=False, save_plt=False):
-    f_start, f_end = 1, 976  # This is set by Lei somewhere
-
-    time_vect, frame_3d, temp_vect = binary_to_numpy(data, f_start, f_end)  # build data arrays from the binary file
-
-    n_rows, n_cols, n_time = frame_3d.shape  # find data dimensions: TxNxM = samples x rows of sensors x columns
-    assert n_time != 0, f'Could not find data for experiment {exp_path.stem}. Check the bin files.'
-
-    arr_temp, arr_chem = split_chem_and_temp(frame_3d)  # separate chemical and temperature pixels
-
-    top_well, bot_well = split_into_n_wells(arr_chem, n=2)  # split top and bottom wells for chemical pixels
-
-    top_well_temp, bot_well_temp = split_into_n_wells(arr_temp, n=2)  # split top and bottom wells for temp pixels
-
-    find_active_pixels = lambda x: filter_by_vref(x) & filter_by_vrange(x)
-    # filter_by_vref finds pixels that are in contact with the solution
-    # filter_by_vrange finds the pixels that have values always within a certain range,
-    #   i.e. their value does not decay nor saturate
-    # here, define find_active_pixels to find the pixels that satisfy both of the above conditions
-
-    idx_top_active, idx_bot_active = [find_active_pixels(i) for i in [top_well, bot_well]]
-    # find active pixels for both the top and bottom well
-
-    assert idx_top_active.sum() != 0, f'No active pixels in the top well. Experiment {exp_path.stem} invalid.'
-    assert idx_bot_active.sum() != 0, f'No active pixels in the bot well. Experiment {exp_path.stem} invalid.'
-
-    idx_top_active, idx_bot_active = cleanup_pixels(idx_top_active), cleanup_pixels(idx_bot_active)
-    # for both the top and bottom well, find the largest active region
-
-    if version == 'v4':
-        settled_idx_top, settled_t_top = find_settled_time(time_vect, top_well_temp, viz=visualise)
-        # top well: find how long it takes for the signal to settle after the chip was loaded (sample index and time)
-        settled_idx_bot, settled_t_bot = find_settled_time(time_vect, bot_well_temp, viz=visualise)
-        # bottom well: find how long it takes for the signal to settle after the chip was loaded (sample index and time)
-    elif version == 'v2':
-        settled_idx_top, settled_t_top = find_loading_time(time_vect, top_well[:, idx_top_active], bounds=(600, 900))
-        settled_idx_bot, settled_t_bot = find_loading_time(time_vect, bot_well[:, idx_bot_active], bounds=(600, 900))
-    else:
-        raise NotImplemented(f'The code for version {version} of the chip has not been implemented')
-
-    x_top = time_vect[settled_idx_top:] - time_vect[settled_idx_top]
-    x_bot = time_vect[settled_idx_bot:] - time_vect[settled_idx_bot]
-    top_well_settled = top_well[settled_idx_top:, :]
-    bot_well_settled = bot_well[settled_idx_bot:, :]
-
-    # Filter pixels that are noisy (derivative above a threshold value)
-    idx_top_active_der, idx_bot_active_der = filter_by_derivative(top_well_settled), filter_by_derivative(bot_well_settled)
-    idx_top_active = idx_top_active & idx_top_active_der
-    idx_bot_active = idx_bot_active & idx_bot_active_der
-
-    # Find idx for 9-19 min bounds
-    bounds_idx_top = time_to_index([540, 1140], x_top)
-    bounds_idx_bot = time_to_index([540, 1140], x_bot)
-    # Filter active pixels as the ones with small error from exponential fit of the normalised signal
-    idx_top_active, fit_error_top = fit_pixels(x_top, top_well_settled, bounds_idx_top, idx_top_active)
-    idx_bot_active, fit_error_bot = fit_pixels(x_bot, bot_well_settled, bounds_idx_bot, idx_bot_active)
-
-    # Filter pixels by k-means clustering
-    if idx_top_active.sum() > 6:
-        idx_top_active = cleanup_by_kmeans(top_well_settled, idx_top_active)
-    # print(bot_well_settled.shape, idx_bot_active.shape)
-    if idx_bot_active.sum() > 6:
-        idx_bot_active = cleanup_by_kmeans(bot_well_settled, idx_bot_active)
-
-    fit_error_top[:, ~idx_top_active] = 0
-    fit_error_bot[:, ~idx_bot_active] = 0
-
-    # Further cleanup of pixels
-    # idx_top_active, idx_bot_active = cleanup_pixels(idx_top_active), cleanup_pixels(idx_bot_active)
-
-    if idx_top_active.sum() == 0:
-        print(f'No active pixels in the top well. Experiment {exp_path.stem} invalid.')  # TODO make it some kind of assertion error
-    if idx_bot_active.sum() == 0:
-        print(f'No active pixels in the bottom well. Experiment {exp_path.stem} invalid.')
-
-    Y_top = top_well[settled_idx_top:, idx_top_active]  # significant data for the top well (active pixels after settling)
-    Y_bot = bot_well[settled_idx_bot:, idx_bot_active]  # significant data for the bottom well (active pixels after settling)
-    temp_top, temp_bot = top_well_temp[settled_idx_top:], bot_well_temp[settled_idx_bot:]  # temperature data after settling
-
-    # Save data for the experiment
-    exp_data = OrderedDict({
-        'Top Well': {
-            'Time': x_top,
-            'Chemical Data': Y_top,
-            'Active Pixels': idx_top_active,
-            'Temperature Data': temp_top,
-            'Fit Error': fit_error_top
-        },
-
-        'Bot Well': {
-            'Time': x_bot,
-            'Chemical Data': Y_bot,
-            'Active Pixels': idx_bot_active,
-            'Temperature Data': temp_bot,
-            'Fit Error': fit_error_bot
-        }
-    })
-
-    if visualise_final:
-        N_axes = 6  # plots for the top and bottom well
-        fig, ax = plt.subplots(N_axes, 2, figsize=(10, 3 * N_axes))
-        fig.suptitle(f"Experiment Name: {exp_path.stem}")
-        ax_top, ax_bot = ax[:, 0], ax[:, 1]
-
-        for ax, x, Y, idx_active, temp, fit_error, label in [(ax_top, x_top, Y_top, idx_top_active, temp_top, fit_error_top, 'Top'),
-                                                  (ax_bot, x_bot, Y_bot, idx_bot_active, temp_bot, fit_error_bot, 'Bot')]:
-
-            ax[0].set_title(f'{label} Well')
-            ax[0].imshow(idx_active.reshape(-1, 56), cmap='cividis')  # plot active/inactive pixels
-
-            ax[1].set(title='Temp Pixels, TP')
-            ax[1].plot(x, temp)  # plot temperature in time
-
-            ax[2].set(title='Active Chemical Pixels, ACP')
-            ax[2].plot(x, Y)  # plot active chemical pixels in time
-
-            Y_bs = Y - np.mean(Y[:3, :], axis=0)  # remove the background by subtracting the first value
-            ax[3].set(title='Background-subtracted ACP')
-            ax[3].plot(x, Y_bs)
-            ax[3].plot(x, np.mean(Y_bs, axis=1), lw=2, color="k", label='Mean')  # plot the the signal with no offset
-            ax[3].legend()
-
-            Y_bs_smooth = pd.DataFrame(Y_bs).rolling(30).mean().values  # filter the data with a MA(30)
-            # i.e. to smooth out the signal, each value is the average of the 30 surrounding ones
-            Y_bs_smooth_mean = np.mean(Y_bs_smooth, axis=1)
-            ax[4].set(title='MA(30) filtered ACF')
-            ax[4].plot(x, Y_bs_smooth)  # plot the smoothed signal
-            ax[4].plot(x, Y_bs_smooth_mean, lw=2, color="k", label='Mean')
-            ax[4].legend()
-
-            # Y_bs_smooth_diff = np.diff(Y_bs_smooth, axis=0)  # compute the derivative of the signal where
-            # # Y_bs_smooth_diff(i) = Y_bs_smooth(i+1) - Y_bs_smooth(i)
-            # ax[5].set(title='1st derivative')
-            # ax[5].plot(x[1:], Y_bs_smooth_diff)
-            # ax[5].plot(x[1:], np.mean(Y_bs_smooth_diff, axis=1), lw=2, color="k", label='Mean')  # plot derivative
-            # ax[5].legend()
-
-            ax[1].get_shared_x_axes().join(*ax[1:5])
-
-            ax[5].set(title='Average fit error')
-            bounds = time_to_index([540, 1140], x)  # average error between 9 and 19min (where positive can occurr)
-            pos = ax[5].imshow(np.mean(fit_error[bounds[0]:bounds[1]], axis=0).reshape(-1, 56), cmap='cividis')
-            fig.colorbar(pos, ax=ax[5])
-
-        plt.tight_layout()
-        if save_plt:
-            plt.savefig(Path(exp_path, 'preprocessing.eps'))
-            print(f'Saved preprocessing figure for {exp_path.stem}')
-        plt.show()
-
-    return exp_data
-
-
 def preprocessing_initial(exp_path, exp_data_initial, visualise=False):
     time_vect = exp_data_initial['Top Well']['Time']
     top_well = exp_data_initial['Top Well']['Chemical Data']
@@ -745,7 +651,6 @@ def preprocessing_initial(exp_path, exp_data_initial, visualise=False):
     assert idx_bot_active.sum() != 0, f'No active pixels in the bot well. Experiment {exp_path.stem} invalid.'
 
     if version == 'v2':
-        # print(f'V2 DATA {time_vect.shape, top_well.shape, idx_top_active.sum()}')
         settled_idx_top, settled_t_top = find_loading_time(time_vect, top_well[:, idx_top_active], bounds=(600, 900))
         settled_idx_bot, settled_t_bot = find_loading_time(time_vect, bot_well[:, idx_bot_active], bounds=(600, 900))
     elif version == 'v4':
@@ -783,7 +688,7 @@ def preprocessing_initial(exp_path, exp_data_initial, visualise=False):
     return exp_data
 
 
-def preprocessing_update(exp_path, exp_data_current, exp_data_preproc, tinitial, visualise=False, visualise_final=False, save_plt=False):
+def preprocessing_update(exp_path, exp_data_current, exp_data_preproc, tinitial, visualise_plt=False, save_plt=False):
     f_start, f_end = 1, 976  # This is set by Lei somewhere
 
     idx_top_active = exp_data_preproc['Top Well']['Active Pixels']
@@ -815,14 +720,9 @@ def preprocessing_update(exp_path, exp_data_current, exp_data_preproc, tinitial,
     tinitial_idx_bot = time_to_index([tinitial], x_bot)[0]
     tcurrent_idx_top = Y_top.shape[0]
     tcurrent_idx_bot = Y_bot.shape[0]
-    # Filter active pixels as the ones with small error from exponential fit of the normalised signal
-    # print(f'FITTING int TOP {x_top.shape, Y_top.shape, tinitial_idx_top, tcurrent_idx_top, tcurrent_idx_top}')
-    # print(f'FITTING int BOT {x_bot.shape, Y_bot.shape, tinitial_idx_bot, tcurrent_idx_bot, tcurrent_idx_bot}')
+    # Interpolate signal fot fitting
     popt_top = fit_pixels_interpolate(x_top, Y_top, idx_top_active, tinitial_idx_top, tcurrent_idx_top-1, popt0=None)
     popt_bot = fit_pixels_interpolate(x_bot, Y_bot, idx_bot_active, tinitial_idx_bot, tcurrent_idx_bot-1, popt0=None)
-    # idx_top_active, fit_error_top = fit_pixels(x_top, Y_top, idx_top_active, tinitial_idx_top, tcurrent_idx_top, tcurrent_idx_top-1)
-    # idx_bot_active, fit_error_bot = fit_pixels(x_bot, Y_bot, idx_bot_active, tinitial_idx_bot, tcurrent_idx_bot, tcurrent_idx_bot-1)
-    # TODO initialise to the correct values
 
     # Filter pixels by k-means clustering
     if idx_top_active.sum() > 6:
@@ -831,7 +731,7 @@ def preprocessing_update(exp_path, exp_data_current, exp_data_preproc, tinitial,
     if idx_bot_active.sum() > 6:
         idx_bot_active = cleanup_by_kmeans(Y_bot, idx_bot_active)
 
-    # Further cleanup of pixels
+    # Further cleanup of pixels  # TODO where does this go?
     # idx_top_active, idx_bot_active = cleanup_pixels(idx_top_active), cleanup_pixels(idx_bot_active)
 
     if idx_top_active.sum() == 0:
@@ -860,7 +760,7 @@ def preprocessing_update(exp_path, exp_data_current, exp_data_preproc, tinitial,
         }
     })
 
-    if visualise_final:
+    if visualise_plt:
         N_axes = 6  # plots for the top and bottom well
         fig, ax = plt.subplots(N_axes, 2, figsize=(10, 3 * N_axes))
         fig.suptitle(f"Experiment Name: {exp_path.stem}")
@@ -925,10 +825,13 @@ def myfilt(arr, MED_FILTER=5, MA_FILTER_DERIV=40):
     return arr_med_ma
 
 
-def find_infl_points(array, D_RANGE = 20):
+def find_infl_points(array, time, tinitial, tfinal, D_RANGE = 20):
     ''' given the 2nd derivative as input , find inflection points of a signal
     and classify them in positive (indicating positive output) and negative '''
+    # Find inflection points
     infls = np.where(np.diff(np.sign(array)))[0]
+    # Only consider inflection points between tinitial and tfinal (that can indicate a positive sample)
+    infls = [x for x in infls if tinitial <= time[x] <= tfinal]
     # Classify inflection points
     positive_infl_idx = []
     negative_infl_idx = []
@@ -942,7 +845,7 @@ def find_infl_points(array, D_RANGE = 20):
     return positive_infl_idx, negative_infl_idx
 
 
-def processing(exp_path, exp_data_preproc, visualise=False, save_plt=False):
+def processing(exp_path, exp_data_preproc, tinitial, tfinal, visualise_plt=False, save_plt=False):
 
     # Get string of experiment ID
     exp_path_str = exp_path.stem
@@ -951,7 +854,7 @@ def processing(exp_path, exp_data_preproc, visualise=False, save_plt=False):
 
     well_summary = {}
 
-    if visualise:
+    if visualise_plt:
         fig, axs = plt.subplots(7, n_wells, figsize=(10, 7 * 3), dpi=100)
         fig.suptitle(f'Experiment: {exp_path_str}')
 
@@ -964,13 +867,13 @@ def processing(exp_path, exp_data_preproc, visualise=False, save_plt=False):
         temp_data = well['Temperature Data']
         popt = well['Fitting Parameters']
 
-        # print(f'FITTING ext {time.shape, chem_data.shape}')
+        # Extrapolate from coefficients + find the error compared to the real curve and identify inactive pixels
         idx_active, fit_error = fit_pixels_extrapolate(time, chem_data, idx_active, chem_data.shape[0], chem_data.shape[0]-1, popt)
         
         # Remove inactive pixels from chem data
         chem_data = chem_data[:, idx_active]
 
-        bounds_idx = time_to_index([540, 1140], time)  # todo: dont need end bound because dont do processing there
+        bounds_idx = time_to_index([tinitial, tfinal], time)  # todo: dont need end bound because dont do processing there
 
         # Average active pixels
         chem_data_av = chem_data.mean(axis=1)  # TODO: ERROR "MEAN OF EMPTY SLICE"
@@ -987,8 +890,7 @@ def processing(exp_path, exp_data_preproc, visualise=False, save_plt=False):
         chem_data_av_ma_diff2 = myfilt(np.gradient(chem_data_av_ma_diff_med_ma))
 
         # Find inflection points
-        positive_infl_idx, negative_infl_idx = find_infl_points(chem_data_av_ma_diff2)
-        positive_infl_idx = [x for x in positive_infl_idx if 500 <= time[x] <= 1200]
+        positive_infl_idx, negative_infl_idx = find_infl_points(chem_data_av_ma_diff2, time, tinitial, tfinal)
 
         if len(positive_infl_idx) > 0:
             if len(negative_infl_idx) >= 5:
@@ -1002,26 +904,20 @@ def processing(exp_path, exp_data_preproc, visualise=False, save_plt=False):
         ttp = time[positive_infl_idx[0]] / 60 if (positive == 'positive') else 0
 
         # FITTING ALGO
-        # Find max error in the range 9-19 min
-        # print(f'XXX {fit_error.shape}')
-        # print(f'XXX {bounds_idx[0], bounds_idx[1]}')
-        # print(f'XXX {fit_error[bounds_idx[0]:bounds_idx[1], :].shape}')
         # TODO THE SMALLEst BETWEEN TIME1 AND TCURRENT
         max_fit_err_at_infl = -2
         for j, k in enumerate(positive_infl_idx):
             fit_err_at_infl = np.mean(fit_error[k, idx_active])
             if fit_err_at_infl > max_fit_err_at_infl:
                 max_fit_err_at_infl = fit_err_at_infl
-            print(f'pos fit err at infl {fit_err_at_infl}')
         max_fit_error = np.amax(fit_error[bounds_idx[0]:bounds_idx[1], :], axis=0)
-
         print(f'MAX FIT ERROR {max_fit_err_at_infl}')
 
         # Find number of pixels with error above threshold for positivity
         thresh_positive = 6
         pos_count = (max_fit_error > thresh_positive).sum()
-        # print(f'number pixels above threshold for positivity = {pos_count}')
         pos_percentage = pos_count / idx_active.sum()
+        # print(f'number pixels above threshold for positivity = {pos_count}')
         # print(f'% of active pixels above threshold for positivity = {pos_percentage}')
 
         # EXPERIMENT SUMMARY
@@ -1048,7 +944,7 @@ def processing(exp_path, exp_data_preproc, visualise=False, save_plt=False):
                                    'table df': exp_df}
 
         # PLOTS
-        if visualise:
+        if visualise_plt:
             # Plot active/inactive pixels
             ax = axs[0]
             ax[i].imshow(idx_active.reshape(-1, 56), cmap='cividis')
@@ -1108,7 +1004,7 @@ def processing(exp_path, exp_data_preproc, visualise=False, save_plt=False):
             ax[i].set_title('Average error (active pixels)')
             ax[i].legend()
 
-    if visualise:
+    if visualise_plt:
         plt.tight_layout()
         if save_plt:
             plt.savefig(Path(exp_path, 'processing.eps'))
@@ -1143,103 +1039,7 @@ def processing(exp_path, exp_data_preproc, visualise=False, save_plt=False):
     return exp_summary
 
 
-def binary_to_wells(data):
-    # Get data from the bin file. Split chem/temp and top/bottom wells
-    f_start, f_end = 1, 976  # This is set by Lei somewhere
-    time_vect, frame_3d, temp_vect = binary_to_numpy(data, f_start, f_end)  # build data arrays from the binary file
-
-    n_rows, n_cols, n_time = frame_3d.shape  # find data dimensions: TxNxM = samples x rows of sensors x columns
-    assert n_time != 0, f'Could not find data for experiment {exp_path.stem}. Check the bin files.'
-
-    arr_temp, arr_chem = split_chem_and_temp(frame_3d)  # separate chemical and temperature pixels
-    top_well, bot_well = split_into_n_wells(arr_chem, n=2)  # split top and bottom wells for chemical pixels
-    top_well_temp, bot_well_temp = split_into_n_wells(arr_temp, n=2)  # split top and bottom wells for temp pixels
-
-    exp_data_unprocessed = OrderedDict({
-        'Top Well': {
-            'Time': time_vect,
-            'Chemical Data': top_well,
-            'Temperature Data': top_well_temp,
-        },
-
-        'Bot Well': {
-            'Time': time_vect,
-            'Chemical Data': bot_well,
-            'Temperature Data': bot_well_temp,
-        }
-    })
-    return exp_data_unprocessed
-
-
-def get_current_data(exp_data_unprocessed, settled_idx_top, settled_idx_bot, tcurrent):
-    time_vect = exp_data_unprocessed['Top Well']['Time']
-    top_well = exp_data_unprocessed['Top Well']['Chemical Data']
-    bot_well = exp_data_unprocessed['Bot Well']['Chemical Data']
-    top_well_temp = exp_data_unprocessed['Top Well']['Temperature Data']
-    bot_well_temp = exp_data_unprocessed['Bot Well']['Temperature Data']
-
-    tcurrent_idx_top = time_to_index([tcurrent+time_vect[settled_idx_top]], time_vect)[0]
-    tcurrent_idx_bot = time_to_index([tcurrent+time_vect[settled_idx_bot]], time_vect)[0]
-    time_vect_top = time_vect[settled_idx_top:tcurrent_idx_top] - time_vect[settled_idx_top]
-    time_vect_bot = time_vect[settled_idx_bot:tcurrent_idx_bot] - time_vect[settled_idx_bot]
-    top_well = top_well[settled_idx_top:tcurrent_idx_top, :]
-    bot_well = bot_well[settled_idx_bot:tcurrent_idx_bot, :]
-    top_well_temp = top_well_temp[settled_idx_top:tcurrent_idx_top, :]
-    bot_well_temp = bot_well_temp[settled_idx_bot:tcurrent_idx_bot, :]
-
-    exp_data_current = OrderedDict({
-        'Top Well': {
-            'Time': time_vect_top,
-            'Chemical Data': top_well,
-            'Temperature Data': top_well_temp,
-        },
-
-        'Bot Well': {
-            'Time': time_vect_bot,
-            'Chemical Data': bot_well,
-            'Temperature Data': bot_well_temp,
-        }
-    })
-    return exp_data_current
-
-
-def get_initial_data(exp_data_unprocessed):
-    time_vect = exp_data_unprocessed['Top Well']['Time']
-    top_well = exp_data_unprocessed['Top Well']['Chemical Data']
-    bot_well = exp_data_unprocessed['Bot Well']['Chemical Data']
-    top_well_temp = exp_data_unprocessed['Top Well']['Temperature Data']
-    bot_well_temp = exp_data_unprocessed['Bot Well']['Temperature Data']
-
-    if version == 'v2':
-        tsettling_idx = time_to_index([930], time_vect)[0]
-    elif version =='v4':
-        tsettling_idx = time_to_index([900], time_vect)[0]  # TODO not 900. what?
-    else:
-        raise NotImplemented(f'The code for version {version} of the chip has not been implemented')
-
-    time_vect = time_vect[:tsettling_idx]
-    top_well = top_well[:tsettling_idx, :]
-    bot_well = bot_well[:tsettling_idx, :]
-    top_well_temp = top_well_temp[:tsettling_idx, :]
-    bot_well_temp = bot_well_temp[:tsettling_idx, :]
-
-    exp_data_initial = OrderedDict({
-        'Top Well': {
-            'Time': time_vect,
-            'Chemical Data': top_well,
-            'Temperature Data': top_well_temp,
-        },
-
-        'Bot Well': {
-            'Time': time_vect,
-            'Chemical Data': bot_well,
-            'Temperature Data': bot_well_temp,
-        }
-    })
-    return exp_data_initial
-
-
-def algo(exp_path, tinitial=540, tfinal=1140, visualise_preprocessing=False, save_preprocessing_plt=False, visualise_processing=False, save_processing_plt=False):
+def algo(exp_path, tinitial=540, tfinal=1140, visualise_preprocessing=False, save_preprocessing=False, visualise_processing=False, save_processing=False):
     data = load_data(exp_path)
 
     exp_data_unprocessed = binary_to_wells(data)
@@ -1256,9 +1056,9 @@ def algo(exp_path, tinitial=540, tfinal=1140, visualise_preprocessing=False, sav
     # TODO: splot fit_expo into finding coefficients and modelling. need to do that also in the preprocessing when the processing was not on the same data.
 
     tcurrent = tfinal
-    exp_data_current = get_current_data(exp_data_unprocessed, settled_idx_top, settled_idx_bot, tcurrent)  # discart settling time.
-    exp_data_preproc = preprocessing_update(exp_path, exp_data_current, exp_data_preproc, tinitial, visualise_final=visualise_preprocessing)
-    exp_summary = processing(exp_path, exp_data_preproc, visualise=visualise_processing, save_plt=save_processing_plt)
+    exp_data_current = get_current_data(exp_data_unprocessed, settled_idx_top, settled_idx_bot, tcurrent)
+    exp_data_preproc = preprocessing_update(exp_path, exp_data_current, exp_data_preproc, tinitial, visualise_plt=visualise_preprocessing, save_plt=save_preprocessing)
+    exp_summary = processing(exp_path, exp_data_preproc, tinitial, tfinal, visualise_plt=visualise_processing, save_plt=save_processing)
 
     # for t<tinitial do noting - need to wait
     # fot the first t>tinitial, do preprocessing initial
@@ -1280,8 +1080,8 @@ if __name__ == "__main__":
     curr_path = Path('..', 'data_files')
     experiments = [x for x in curr_path.iterdir() if x.is_dir()]
     for exp_path in tqdm(experiments):
-        out = algo(exp_path, visualise_preprocessing=True, save_preprocessing_plt=False, visualise_processing=False,
-                   save_processing_plt=False)
+        out = algo(exp_path, visualise_preprocessing=True, save_preprocessing=False, visualise_processing=False,
+                   save_processing=False)
         # for well_name, well_data in out['well data'].items():
             # print(well_data['table df'], end='\n')
         print('---')
