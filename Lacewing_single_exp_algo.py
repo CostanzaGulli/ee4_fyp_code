@@ -164,18 +164,26 @@ def get_initial_data(exp_data_unprocessed):
     top_well_temp = exp_data_unprocessed['Top Well']['Temperature Data']
     bot_well_temp = exp_data_unprocessed['Bot Well']['Temperature Data']
 
+    # fig, ax = plt.subplots(figsize=(12, 3))
+    # ax.plot(time_vect, top_well)
+    # ax.set_title('Original data time series. Experiment 35', fontsize=20)
+    # ax.set_xlabel('Time (s)', fontsize=18)
+    # ax.set_ylabel('Voltage (mV)', fontsize=18)
+    # # plt.savefig('exp35_originaldata.png')
+    # plt.show()
+
     if version == 'v2':
-        tsettling_idx = time_to_index([930], time_vect)[0]
+        tstart_idx = time_to_index([930], time_vect)[0]
     elif version =='v4':
-        tsettling_idx = time_to_index([900], time_vect)[0]  # TODO not 900. what?
+        tstart_idx = time_to_index([900], time_vect)[0]  # TODO not 900. what?
     else:
         raise NotImplemented(f'The code for version {version} of the chip has not been implemented')
 
-    time_vect = time_vect[:tsettling_idx]
-    top_well = top_well[:tsettling_idx, :]
-    bot_well = bot_well[:tsettling_idx, :]
-    top_well_temp = top_well_temp[:tsettling_idx, :]
-    bot_well_temp = bot_well_temp[:tsettling_idx, :]
+    time_vect = time_vect[:tstart_idx]
+    top_well = top_well[:tstart_idx, :]
+    bot_well = bot_well[:tstart_idx, :]
+    top_well_temp = top_well_temp[:tstart_idx, :]
+    bot_well_temp = bot_well_temp[:tstart_idx, :]
 
     exp_data_initial = OrderedDict({
         'Top Well': {
@@ -352,7 +360,7 @@ def find_loading_time(time_vect, X, bounds=(600, 900), viz=False):  # for v2
     return loading_index, loading_time
 
 
-def find_settled_time(time_vect, temp, viz=False):  # for v4
+def find_settled_time(time_vect, temp):  # for v4
     temp_mean = np.mean(temp, axis=1)
     threshold = temp_mean[0]+0.95*(temp_mean[-1]-temp_mean[0])
     settled_idx = np.argmax(temp_mean > threshold)
@@ -530,7 +538,7 @@ def cleanup_by_kmeans(well, idx_active, n_max=6, method="center"):
     #  Each observation belongs to the cluster with the nearest mean (cluster centers).
 
     X = well[:, idx_active].T  # X.shape = (n of active pixels)xT
-    X = X / np.linalg.norm(X, axis=1).reshape(-1, 1)
+    # X = X / np.linalg.norm(X, axis=1).reshape(-1, 1)  # TODO commented this. not ok
 
     best_score = -1
     for n_clusters in range(2, n_max+1):  # find the optimal number of clusters
@@ -567,35 +575,39 @@ def decaying_exp_pos(x, b):
     return 1-np.exp(-b * x)
 
 
-def fit_pixels_interpolate(time, X, idx_active, interpolate_idx, drift_idx, popt0=None):  #popt0=ones(length(xshape1))
-    popt = np.array(np.zeros(X.shape[1]))  # modify for fitting with more parameters
+def decaying_exp(x, a, b):
+    return a*(1-np.exp(-b * x))
+
+
+def fit_pixels_interpolate(time, X, idx_active, interpolate_idx, drift_idx, popt0=[-10, 0.1]):
+    # popt = np.array(np.zeros(X.shape[1]))  # modify for fitting with more parameters
+    popt = np.zeros((2, X.shape[1]))
 
     # for every pixel
     for i in range(X.shape[1]):
         if idx_active[i]:  # if the pixel is active...
             data = filtfilt(b=np.ones(10) / 10, a=[1], x=X[:, i])
-            drift = data[drift_idx] - data[0]
 
-            time, data = time.reshape(-1, 1), data.reshape(-1, 1)  # Reshape time and data for scikit-learn functions
-            x_scaler, y_scaler = MinMaxScaler(), MinMaxScaler()  # Normalise x, y data for curve fitting
-            time_scaled, data_scaled = x_scaler.fit_transform(time), y_scaler.fit_transform(data)  # TODO ora normalised tutto. invece normalise solo quello che dopo viene fitted (fino a b0)
-
-            time_scaled, data_scaled = time_scaled.reshape(-1), data_scaled.reshape(-1)  # Reshape time and data for scipy functions
-            # Fit the curve (i.e. interpolate/extrapolate)
+            # Fit the curve (interpolate)
             try:
-                if popt0 is None:
-                    popt[i], pcov = curve_fit(decaying_exp_neg, time_scaled[:interpolate_idx],
-                                              data_scaled[:interpolate_idx]) if drift <= 0 else \
-                        curve_fit(decaying_exp_pos, time_scaled[:interpolate_idx], data_scaled[:interpolate_idx])
-                else:
-                    popt[i], pcov = curve_fit(decaying_exp_neg, time_scaled[:interpolate_idx],
-                                              data_scaled[:interpolate_idx], p0=popt0[i]) if drift <= 0 else \
-                        curve_fit(decaying_exp_pos, time_scaled[:interpolate_idx], data_scaled[:interpolate_idx], p0=popt0[i])
+                popt[:, i], pcov = curve_fit(decaying_exp, time[:interpolate_idx], data[:interpolate_idx], p0=[-10, 0.1])
+
+                # data_scaled_fit = decaying_exp(time[:interpolate_idx], *popt[:, i])
+                # fig, ax = plt.subplots()
+                # ax.plot(time[:interpolate_idx], data[:interpolate_idx])
+                # ax.plot(time[:interpolate_idx], data_scaled_fit)
+                # ax.set_title(f'fitting with parameters {popt[:, i]}')
+                # plt.show()
             except:
-                print('except: could not fit this pixel')
-                popt[i] = 200
+                print('EXCEPT: could not fit this pixel')
+                popt[:, i] = 100
+
+                # print(popt[:, i])
+                # fig, ax = plt.subplots()
+                # ax.plot(time, data)
+                # plt.show()
         else:
-            popt[i] = 200
+            popt[:, i] = 100
     return popt
 
 
@@ -610,16 +622,17 @@ def fit_pixels_extrapolate(time, X, idx_active, extrapolate_idx, drift_idx, popt
             drift = data[drift_idx] - data[0]
             drift_magnitude = np.abs(drift)  # Find drift magnitude (in V)
 
-            time, data = time.reshape(-1, 1), data.reshape(-1, 1)  # Reshape time and data for scikit-learn functions
-            x_scaler, y_scaler = MinMaxScaler(), MinMaxScaler()  # Normalise x, y data for curve fitting
-            time_scaled, data_scaled = x_scaler.fit_transform(time), y_scaler.fit_transform(data)  # TODO ora normalised tutto. invece normalise solo quello che dopo viene fitted (fino a b0)
-
-            time_scaled, data_scaled = time_scaled.reshape(-1), data_scaled.reshape(-1)  # Reshape time and data for scipy functions
-            # Fit the curve (i.e. interpolate/extrapolate)
-            if drift_magnitude != 0 and popt[i] < 100:
-                data_scaled_fit = decaying_exp_neg(time_scaled[:extrapolate_idx], popt[i]) if drift <= 0 else decaying_exp_pos(time_scaled[:extrapolate_idx], popt[i])
-                fit_error[:, i] = np.abs(data_scaled[:extrapolate_idx] - data_scaled_fit)*drift_magnitude  # Fit error scaled with drift magnitude of input
+            # Fit the curve (extrapolate)
+            # if drift_magnitude != 0 and popt[i] < 100:
+            if drift_magnitude != 0 and popt[1, i] < 100:
+                data_fit = decaying_exp(time[:extrapolate_idx], *popt[:,i])
+                fit_error[:, i] = np.abs(data[:extrapolate_idx] - data_fit)
                 idx_active_fit[i] = (fit_error[:, i] < thresh_active).all()
+
+                # fig, ax = plt.subplots()
+                # ax.plot(time[:extrapolate_idx], data[:extrapolate_idx])
+                # ax.plot(time[:extrapolate_idx], data_fit)
+                # plt.show()
             else:
                 idx_active_fit[i] = False
         else:
@@ -629,23 +642,60 @@ def fit_pixels_extrapolate(time, X, idx_active, extrapolate_idx, drift_idx, popt
     return idx_active, fit_error
 
 
-def preprocessing_initial(exp_path, exp_data_initial, visualise=False):
+def preprocessing_initial(exp_path, exp_data_initial, visualise_filtering=False):
     time_vect = exp_data_initial['Top Well']['Time']
     top_well = exp_data_initial['Top Well']['Chemical Data']
     bot_well = exp_data_initial['Bot Well']['Chemical Data']
     top_well_temp = exp_data_initial['Top Well']['Temperature Data']
     bot_well_temp = exp_data_initial['Bot Well']['Temperature Data']
 
-    find_active_pixels = lambda x: filter_by_vref(x) & filter_by_vrange(x)
+    # find_active_pixels = lambda x: filter_by_vref(x) & filter_by_vrange(x)
     # filter_by_vref finds pixels that are in contact with the solution
     # filter_by_vrange finds the pixels that have values always within a certain range,
     #   i.e. their value does not decay nor saturate
     # here, define find_active_pixels to find the pixels that satisfy both of the above conditions
-
-    idx_top_active, idx_bot_active = [find_active_pixels(i) for i in [top_well, bot_well]]
+    # idx_top_active, idx_bot_active = [find_active_pixels(i) for i in [top_well, bot_well]]
     # find active pixels for both the top and bottom well
+
+    idx_top_active_vref = filter_by_vref(top_well)
+    idx_bot_active_vref = filter_by_vref(bot_well)
+    idx_top_active_vrange = filter_by_vrange(top_well)
+    idx_bot_active_vrange = filter_by_vrange(bot_well)
+    idx_top_active = idx_top_active_vref & idx_top_active_vrange
+    idx_bot_active = idx_bot_active_vref & idx_bot_active_vrange
+
+    if visualise_filtering:
+        fig, ax = plt.subplots(3, 2, figsize=(10, 3*3))
+        exp_path_str = str(exp_path)
+        experiment_id = exp_path_str[exp_path_str.rfind('_') + 1:]
+        fig.suptitle(f'Preprocessing Initial. Experiment {experiment_id}', fontsize=22)
+        ax[0, 0].imshow(idx_top_active_vref.reshape(-1, 56), cmap='cividis')
+        ax[0, 0].set_title('Step 1: Filtered by Vref', fontsize=20)
+
+        ax[0, 1].plot(time_vect, top_well[:, idx_top_active_vref])
+        ax[0, 1].set_xlabel('Time (s)', fontsize=18)
+        ax[0, 1].set_ylabel('Voltage (mV)', fontsize=18)
+
+        ax[1, 0].imshow(idx_top_active.reshape(-1, 56), cmap='cividis')
+        ax[1, 0].set_title('Step 2: Filtered by Vrange', fontsize=20)
+
+        ax[1, 1].plot(time_vect, top_well[:, idx_top_active])
+        ax[1, 1].set_xlabel('Time (s)', fontsize=18)
+        ax[1, 1].set_ylabel('Voltage (mV)', fontsize=18)
+
     idx_top_active, idx_bot_active = cleanup_pixels(idx_top_active), cleanup_pixels(idx_bot_active)
     # for both the top and bottom well, find the largest active region
+
+    if visualise_filtering:
+        ax[2, 0].imshow(idx_top_active.reshape(-1, 56), cmap='cividis')
+        ax[2, 0].set_title('Step 3: Filtered spatially', fontsize=20)
+
+        ax[2, 1].plot(time_vect, top_well[:, idx_top_active])
+        ax[2, 1].set_xlabel('Time (s)', fontsize=18)
+        ax[2, 1].set_ylabel('Voltage (mV)', fontsize=18)
+        plt.tight_layout()
+        # plt.savefig('exp64_preproc_initial.eps')
+        plt.show()
 
     assert idx_top_active.sum() != 0, f'No active pixels in the top well. Experiment {exp_path.stem} invalid.'
     assert idx_bot_active.sum() != 0, f'No active pixels in the bot well. Experiment {exp_path.stem} invalid.'
@@ -654,12 +704,25 @@ def preprocessing_initial(exp_path, exp_data_initial, visualise=False):
         settled_idx_top, settled_t_top = find_loading_time(time_vect, top_well[:, idx_top_active], bounds=(600, 900))
         settled_idx_bot, settled_t_bot = find_loading_time(time_vect, bot_well[:, idx_bot_active], bounds=(600, 900))
     elif version == 'v4':
-        settled_idx_top, settled_t_top = find_settled_time(time_vect, top_well_temp, viz=visualise)
+        settled_idx_top, settled_t_top = find_settled_time(time_vect, top_well_temp)
         # top well: find how long it takes for the signal to settle after the chip was loaded (sample index and time)
-        settled_idx_bot, settled_t_bot = find_settled_time(time_vect, bot_well_temp, viz=visualise)
+        settled_idx_bot, settled_t_bot = find_settled_time(time_vect, bot_well_temp)
         # bottom well: find how long it takes for the signal to settle after the chip was loaded (sample index and time)
     else:
         raise NotImplemented(f'The code for version {version} of the chip has not been implemented')
+
+
+    if visualise_filtering:
+        fig, ax = plt.subplots(figsize=(12, 3), dpi=300)
+        ax.plot(time_vect, top_well)
+        ax.axvline(x=time_vect[settled_idx_top-10], color='k', linestyle='--', linewidth=2, label='Loading time')
+        ax.axvline(x=time_vect[settled_idx_top], color='k', linewidth=2, label='Settled time')
+        ax.set_title(f'Original data time series (until t_start). Experiment {experiment_id}', fontsize=20)
+        ax.set_xlabel('Time (s)', fontsize=18)
+        ax.set_ylabel('Voltage (mV)', fontsize=18)
+        ax.legend(fontsize=18, bbox_to_anchor=(1, 1))
+        # plt.savefig('exp64_data_preproc_initial.eps')
+        plt.show()
 
     x_top = time_vect[settled_idx_top:] - time_vect[settled_idx_top]
     x_bot = time_vect[settled_idx_bot:] - time_vect[settled_idx_bot]
@@ -688,7 +751,7 @@ def preprocessing_initial(exp_path, exp_data_initial, visualise=False):
     return exp_data
 
 
-def preprocessing_update(exp_path, exp_data_current, exp_data_preproc, tinitial, visualise_plt=False, save_plt=False):
+def preprocessing_update(exp_path, exp_data_current, exp_data_preproc, tinitial, visualise_plt=False, save_plt=False, visualise_filtering=True):
     f_start, f_end = 1, 976  # This is set by Lei somewhere
 
     idx_top_active = exp_data_preproc['Top Well']['Active Pixels']
@@ -703,9 +766,29 @@ def preprocessing_update(exp_path, exp_data_current, exp_data_preproc, tinitial,
     temp_top = exp_data_current['Top Well']['Temperature Data']
     temp_bot = exp_data_current['Bot Well']['Temperature Data']
 
+    if visualise_filtering:
+        fig, ax = plt.subplots(4, 2, figsize=(10, 3*4))
+        exp_path_str = str(exp_path)
+        experiment_id = exp_path_str[exp_path_str.rfind('_') + 1:]
+        fig.suptitle(f'Preprocessing Update. Experiment {experiment_id}', fontsize=22)
+        ax[0, 0].imshow(idx_top_active.reshape(-1, 56), cmap='cividis')
+        ax[0, 0].set_title('Step 0: From preprocessing_initial', fontsize=20)
+
+        ax[0, 1].plot(x_top, Y_top[:, idx_top_active] - np.mean(Y_top[:3, idx_top_active], axis=0))
+        ax[0, 1].set_xlabel('Time (s)', fontsize=18)
+        ax[0, 1].set_ylabel('Voltage (mV)', fontsize=18)
+
     idx_top_active_range, idx_bot_active_range = [filter_by_vrange(i) for i in [Y_top, Y_bot]]
     idx_top_active = idx_top_active & idx_top_active_range
     idx_bot_active = idx_bot_active & idx_bot_active_range
+
+    if visualise_filtering:
+        ax[1, 0].imshow(idx_top_active.reshape(-1, 56), cmap='cividis')
+        ax[1, 0].set_title('Step 1: Filtered by Vrange', fontsize=20)
+
+        ax[1, 1].plot(x_top, Y_top[:, idx_top_active] - np.mean(Y_top[:3, idx_top_active], axis=0))
+        ax[1, 1].set_xlabel('Time (s)', fontsize=18)
+        ax[1, 1].set_ylabel('Voltage (mV)', fontsize=18)
 
     assert idx_top_active.sum() != 0, f'No active pixels in the top well. Experiment {exp_path.stem} invalid.'
     assert idx_bot_active.sum() != 0, f'No active pixels in the bot well. Experiment {exp_path.stem} invalid.'
@@ -715,21 +798,46 @@ def preprocessing_update(exp_path, exp_data_current, exp_data_preproc, tinitial,
     idx_top_active = idx_top_active & idx_top_active_der
     idx_bot_active = idx_bot_active & idx_bot_active_der
 
+    if visualise_filtering:
+        ax[2, 0].imshow(idx_top_active.reshape(-1, 56), cmap='cividis')
+        ax[2, 0].set_title('Step 2: Filtered by derivative', fontsize=20)
+
+        ax[2, 1].plot(x_top, Y_top[:, idx_top_active] - np.mean(Y_top[:3, idx_top_active], axis=0))
+        ax[2, 1].set_xlabel('Time (s)', fontsize=18)
+        ax[2, 1].set_ylabel('Voltage (mV)', fontsize=18)
+
     # Find idx for 9-19 min bounds
     tinitial_idx_top = time_to_index([tinitial], x_top)[0]
     tinitial_idx_bot = time_to_index([tinitial], x_bot)[0]
     tcurrent_idx_top = Y_top.shape[0]
     tcurrent_idx_bot = Y_bot.shape[0]
+
+    Y_top_bs = Y_top - np.mean(Y_top[:3, :], axis=0)
+    Y_bot_bs = Y_bot - np.mean(Y_bot[:3, :], axis=0)
+    print(np.isnan(Y_bot_bs).sum())
+
     # Interpolate signal fot fitting
-    popt_top = fit_pixels_interpolate(x_top, Y_top, idx_top_active, tinitial_idx_top, tcurrent_idx_top-1, popt0=None)
-    popt_bot = fit_pixels_interpolate(x_bot, Y_bot, idx_bot_active, tinitial_idx_bot, tcurrent_idx_bot-1, popt0=None)
+    # XX changed the bs signal
+    popt_top = fit_pixels_interpolate(x_top, Y_top_bs, idx_top_active, tinitial_idx_top, tcurrent_idx_top-1, popt0=None)
+    popt_bot = fit_pixels_interpolate(x_bot, Y_bot_bs, idx_bot_active, tinitial_idx_bot, tcurrent_idx_bot-1, popt0=None)
 
     # Filter pixels by k-means clustering
     if idx_top_active.sum() > 6:
-        idx_top_active = cleanup_by_kmeans(Y_top, idx_top_active)
+        idx_top_active = cleanup_by_kmeans(Y_top_bs, idx_top_active)
     # print(bot_well_settled.shape, idx_bot_active.shape)
     if idx_bot_active.sum() > 6:
-        idx_bot_active = cleanup_by_kmeans(Y_bot, idx_bot_active)
+        idx_bot_active = cleanup_by_kmeans(Y_bot_bs, idx_bot_active)
+
+    if visualise_filtering:
+        ax[3, 0].imshow(idx_top_active.reshape(-1, 56), cmap='cividis')
+        ax[3, 0].set_title('Step 3: Filtered by kmeans', fontsize=20)
+
+        ax[3, 1].plot(x_top, Y_top_bs[:, idx_top_active])
+        ax[3, 1].set_xlabel('Time (s)', fontsize=18)
+        ax[3, 1].set_ylabel('Voltage (mV)', fontsize=18)
+        plt.tight_layout()
+        # plt.savefig('exp35_preproc_update.eps')
+        plt.show()
 
     # Further cleanup of pixels  # TODO where does this go?
     # idx_top_active, idx_bot_active = cleanup_pixels(idx_top_active), cleanup_pixels(idx_bot_active)
@@ -773,10 +881,13 @@ def preprocessing_update(exp_path, exp_data_current, exp_data_preproc, tinitial,
             ax[0].imshow(idx_active.reshape(-1, 56), cmap='cividis')  # plot active/inactive pixels
 
             ax[1].set(title='Temp Pixels, TP')
+            print(f'X DOPO {x.shape}')
+
             ax[1].plot(x, temp)  # plot temperature in time
 
             ax[2].set(title='Active Chemical Pixels, ACP')
-            if Y.shape[1] > 0: ax[2].plot(x, Y)  # plot chem pixels in time if there are active pixels
+            if Y.shape[1] > 0:
+                ax[2].plot(x, Y)  # plot chem pixels in time if there are active pixels
 
             Y_bs = Y - np.mean(Y[:3, :], axis=0)  # remove the background by subtracting the first value
             ax[3].set(title='Background-subtracted ACP')
@@ -867,6 +978,9 @@ def processing(exp_path, exp_data_preproc, tinitial, tfinal, visualise_plt=False
         temp_data = well['Temperature Data']
         popt = well['Fitting Parameters']
 
+        # Remove background from chem data
+        chem_data = chem_data - np.mean(chem_data[:3, :], axis=0)
+
         # Extrapolate from coefficients + find the error compared to the real curve and identify inactive pixels
         idx_active, fit_error = fit_pixels_extrapolate(time, chem_data, idx_active, chem_data.shape[0], chem_data.shape[0]-1, popt)
         
@@ -916,7 +1030,10 @@ def processing(exp_path, exp_data_preproc, tinitial, tfinal, visualise_plt=False
         # Find number of pixels with error above threshold for positivity
         thresh_positive = 6
         pos_count = (max_fit_error > thresh_positive).sum()
-        pos_percentage = pos_count / idx_active.sum()
+        if idx_active.sum() != 0:
+            pos_percentage = pos_count / idx_active.sum()
+        else:
+            pos_percentage = 100000  # TODO changee
         # print(f'number pixels above threshold for positivity = {pos_count}')
         # print(f'% of active pixels above threshold for positivity = {pos_percentage}')
 
@@ -931,7 +1048,7 @@ def processing(exp_path, exp_data_preproc, tinitial, tfinal, visualise_plt=False
 
         # ALL EXPERIMENTS SUMMARY
         well_summary[well_name] = {'time': time,
-                                   'average chem data': chem_data_av_ma,
+                                   'average chem data': chem_data_av_ma,  # TODO need to store all the data to reuse code!!
                                    'average temp data': temp_data_av,
                                    'active pixels': n_active_pixels,
                                    'drift': drift,
@@ -983,10 +1100,9 @@ def processing(exp_path, exp_data_preproc, tinitial, tfinal, visualise_plt=False
             table.scale(1.3, 1.3)
 
             ax = axs[4]
-            chem_data_bs = chem_data - np.mean(chem_data[:3, :], axis=0)
-            if chem_data_bs.shape[1] != 0:
-                ax[i].plot(time, chem_data_bs)
-                ax[i].plot(time, np.mean(chem_data_bs, axis=1), lw=2, c='k', label='mean')
+            if chem_data.shape[1] != 0:
+                ax[i].plot(time, chem_data)
+                ax[i].plot(time, np.mean(chem_data, axis=1), lw=2, c='k', label='mean')
                 ax[i].axvspan(540, 1140, alpha=.5, color='yellow', label='9-19min')
                 ax[i].set_title('BS average signal (active pixels)')
                 ax[i].legend()
@@ -1071,17 +1187,18 @@ def algo(exp_path, tinitial=540, tfinal=1140, visualise_preprocessing=False, sav
 
 if __name__ == "__main__":
     # exp_path = Path('.', '210520_6_27')
-    # exp_path = Path('..', 'data_files', '140520_2_170')
+    exp_path = Path('..', 'data_files', '250520_7_64')
+    # exp_path = Path('..', 'data_files', '210520_6_27')
     # exp_path = Path('..', 'data_files_v3', 'D20210316_E00_C00_F4500KHz_U_ST28_DNA')
-    #out = algo(exp_path, visualise_preprocessing=True, save_preprocessing_plt=False, visualise_processing=True, save_processing_plt=False)
+    out = algo(exp_path, visualise_preprocessing=False, save_preprocessing=False, visualise_processing=False, save_processing=False)
     #for well_name, well_data in out['well data'].items():
     #    print(well_data['table df'], end='\n')
 
-    curr_path = Path('..', 'data_files')
-    experiments = [x for x in curr_path.iterdir() if x.is_dir()]
-    for exp_path in tqdm(experiments):
-        out = algo(exp_path, visualise_preprocessing=True, save_preprocessing=False, visualise_processing=False,
-                   save_processing=False)
-        # for well_name, well_data in out['well data'].items():
-            # print(well_data['table df'], end='\n')
-        print('---')
+    # curr_path = Path('..', 'data_files')
+    # experiments = [x for x in curr_path.iterdir() if x.is_dir()]
+    # for exp_path in tqdm(experiments):
+    #     out = algo(exp_path, visualise_preprocessing=False, save_preprocessing=False, visualise_processing=False,
+    #                save_processing=False)
+    #     # for well_name, well_data in out['well data'].items():
+    #         # print(well_data['table df'], end='\n')
+    #     print('---')

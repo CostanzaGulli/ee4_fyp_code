@@ -55,7 +55,7 @@ if __name__ == "__main__":
             else:
                 positive_true = positive_true.append(['negative'], ignore_index=True)
 
-            out = la.algo(exp_path, visualise_preprocessing=True, visualise_processing=False)
+            out = la.algo(exp_path, visualise_preprocessing=False, visualise_processing=False)
             # all_exp_summary.extend(out)
             wells_summary = all_exp_summary.append(out['well data'], ignore_index=True)
             positive_pred = positive_pred.append([out['well data']['Top Well']['result']], ignore_index=True)
