@@ -1,0 +1,9680 @@
+--------------------------------
+20210319T164027.35
+--------------------------------
+S: Open serial port COM4, Failded
+S: Open serial port COM4, Failded
+S: Open serial port COM4, Successful
+M: Firmware for LacewingPXE
+   Version:  v04
+M: Battery
+   SoC:      %100
+M: Battery
+   Dir:      N/A
+   Cur:      0 mA
+M: Battery
+   Vol:      4.12 V
+M: TTN Clock
+   Freq:     4500.00KHz
+M: TTN Init
+M: TTN Available
+   Val:      1
+M: TTN Init
+M: TTN Sweep Search Vref
+   Init
+   0    ,55
+   0    ,55
+C  Vref  No.
+   0    ,55
+   0    ,55
+   100  ,55
+   100  ,55
+   200  ,56
+   200  ,56
+   300  ,56
+   300  ,56
+   400  ,55
+   400  ,55
+   500  ,5
+   500  ,5
+   600  ,4
+   600  ,4
+   700  ,4
+   700  ,4
+   800  ,6
+   800  ,6
+   900  ,6
+   900  ,6
+   1000 ,6
+   1000 ,6
+   1100 ,8
+   1100 ,8
+   1200 ,9
+   1200 ,9
+   1300 ,24
+   1300 ,22
+   1400 ,155
+   1400 ,150
+   1500 ,541
+   1500 ,542
+   1600 ,1017
+   1600 ,1017
+   1700 ,1338
+   1700 ,1337
+   1800 ,1542
+   1800 ,1542
+   1900 ,1659
+   1900 ,1659
+   2000 ,1602
+   2000 ,1605
+   2100 ,1259
+   2100 ,1259
+   2200 ,826
+   2200 ,826
+   2300 ,549
+   2300 ,546
+   2400 ,374
+   2400 ,374
+   2500 ,287
+   2500 ,286
+   2600 ,261
+   2600 ,261
+   2700 ,253
+   2700 ,253
+   2800 ,237
+   2800 ,237
+   2900 ,221
+   2900 ,222
+   3000 ,222
+   3000 ,222
+   3100 ,214
+   3100 ,214
+   3200 ,200
+   3200 ,201
+   3300 ,194
+   3300 ,194
+   3400 ,174
+   3400 ,174
+   3500 ,145
+   3500 ,145
+   3600 ,106
+   3600 ,106
+   3700 ,73
+   3700 ,73
+   3800 ,43
+   3800 ,43
+   3900 ,23
+   3900 ,23
+   4000 ,16
+   4000 ,16
+>> 1900 ,1659
+F  Vref  No.
+   1800 ,1494
+   1800 ,1549
+   1800 ,1548
+   1800 ,1546
+   1800 ,1546
+   1810 ,1558
+   1810 ,1559
+   1810 ,1558
+   1810 ,1558
+   1820 ,1577
+   1820 ,1576
+   1820 ,1575
+   1820 ,1573
+   1820 ,1575
+   1820 ,1574
+   1820 ,1574
+   1830 ,1587
+   1830 ,1588
+   1830 ,1588
+   1840 ,1602
+   1840 ,1603
+   1840 ,1603
+   1850 ,1609
+   1850 ,1609
+   1860 ,1618
+   1860 ,1618
+   1870 ,1628
+   1870 ,1628
+   1880 ,1636
+   1880 ,1636
+   1890 ,1649
+   1890 ,1650
+   1890 ,1650
+   1900 ,1659
+   1900 ,1660
+   1900 ,1660
+   1910 ,1662
+   1910 ,1662
+   1920 ,1671
+   1920 ,1671
+   1930 ,1676
+   1930 ,1676
+   1940 ,1678
+   1940 ,1677
+   1940 ,1678
+   1940 ,1677
+   1940 ,1677
+   1950 ,1677
+   1950 ,1676
+   1950 ,1676
+   1960 ,1669
+   1960 ,1669
+   1970 ,1652
+   1970 ,1651
+   1970 ,1652
+   1970 ,1651
+   1970 ,1651
+>> 1940 ,1677
+M: TTN Evaluate Pixel
+M: TTN Ambient Temp
+   Tmp:      29.53 [C]
+M: TTN Chamber Temp
+   Tmp:      26.42 [C]
+M: TTN Calibrate Vs
+M: TTN Temp
+   Vs:       321
+M: TTN Temp
+   Ref:      366
+M: TTN Temp Reg Init
+M: TTN Chem
+   Vs:       508
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       507
+M: TTN Temp
+   Vs:       321
+M: ADC
+   Val:      1099
+   Ics:     ~-231.601nA
+M: TIM2 PWM Out
+   DutyCyc:  %  0
+M: TTN Ambient Temp
+   Tmp:      30.21 [C]
+M: TTN Chamber Temp
+   Tmp:      26.35 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       506
+M: TTN Temp
+   Vs:       321
+M: ADC
+   Val:      1286
+   Ics:     ~-185.940nA
+M: TIM2 PWM Out
+   DutyCyc:  %  0
+M: TTN Ambient Temp
+   Tmp:      30.27 [C]
+M: TTN Chamber Temp
+   Tmp:      26.32 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       506
+M: TTN Temp
+   Vs:       321
+M: ADC
+   Val:      1285
+   Ics:     ~-186.184nA
+M: TIM2 PWM Out
+   DutyCyc:  %  0
+M: TTN Ambient Temp
+   Tmp:      30.25 [C]
+M: TTN Chamber Temp
+   Tmp:      26.36 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       506
+M: TTN Temp
+   Vs:       321
+M: ADC
+   Val:      1479
+   Ics:     ~-138.814nA
+M: TIM2 PWM Out
+   DutyCyc:  %  0
+M: TTN Ambient Temp
+   Tmp:      30.31 [C]
+M: TTN Chamber Temp
+   Tmp:      26.36 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       506
+M: TTN Temp
+   Vs:       321
+M: ADC
+   Val:      1423
+   Ics:     ~-152.488nA
+M: TIM2 PWM Out
+   DutyCyc:  %  0
+M: TTN Ambient Temp
+   Tmp:      30.32 [C]
+M: TTN Chamber Temp
+   Tmp:      26.35 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       357
+M: TTN Temp
+   Vs:       324
+M: ADC
+   Val:      1533
+   Ics:     ~-125.628nA
+M: TIM2 PWM Out
+   DutyCyc:  %  0
+M: TTN Ambient Temp
+   Tmp:      30.35 [C]
+M: TTN Chamber Temp
+   Tmp:      26.36 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       357
+M: TTN Temp
+   Vs:       323
+M: ADC
+   Val:      1525
+   Ics:     ~-127.582nA
+M: TIM2 PWM Out
+   DutyCyc:  %  0
+M: TTN Ambient Temp
+   Tmp:      30.52 [C]
+M: TTN Chamber Temp
+   Tmp:      26.35 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       357
+M: TTN Temp
+   Vs:       321
+M: ADC
+   Val:      1384
+   Ics:     ~-162.011nA
+M: TIM2 PWM Out
+   DutyCyc:  %  0
+M: TTN Ambient Temp
+   Tmp:      30.54 [C]
+M: TTN Chamber Temp
+   Tmp:      26.36 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       356
+M: TTN Temp
+   Vs:       321
+M: ADC
+   Val:      2240
+   Ics:     ~47.004nA
+M: TIM2 PWM Out
+   DutyCyc:  %  0
+M: TTN Ambient Temp
+   Tmp:      30.56 [C]
+M: TTN Chamber Temp
+   Tmp:      26.36 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       356
+M: TTN Temp
+   Vs:       321
+M: ADC
+   Val:      1380
+   Ics:     ~-162.987nA
+M: TIM2 PWM Out
+   DutyCyc:  %  0
+M: TTN Ambient Temp
+   Tmp:      30.58 [C]
+M: TTN Chamber Temp
+   Tmp:      26.35 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       504
+M: TTN Temp
+   Vs:       324
+M: ADC
+   Val:      1330
+   Ics:     ~-175.196nA
+M: TIM2 PWM Out
+   DutyCyc:  %  0
+M: TTN Ambient Temp
+   Tmp:      30.58 [C]
+M: TTN Chamber Temp
+   Tmp:      26.35 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       502
+M: TTN Temp
+   Vs:       323
+M: ADC
+   Val:      1080
+   Ics:     ~-236.240nA
+M: TIM2 PWM Out
+   DutyCyc:  %  0
+M: TTN Ambient Temp
+   Tmp:      30.70 [C]
+M: TTN Chamber Temp
+   Tmp:      26.38 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       502
+M: TTN Temp
+   Vs:       322
+M: ADC
+   Val:      1340
+   Ics:     ~-172.754nA
+M: TIM2 PWM Out
+   DutyCyc:  %  0
+M: TTN Ambient Temp
+   Tmp:      30.70 [C]
+M: TTN Chamber Temp
+   Tmp:      26.36 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       502
+M: TTN Temp
+   Vs:       322
+M: ADC
+   Val:      1643
+   Ics:     ~-98.769nA
+M: TIM2 PWM Out
+   DutyCyc:  %  0
+M: TTN Ambient Temp
+   Tmp:      30.72 [C]
+M: TTN Chamber Temp
+   Tmp:      26.38 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       502
+M: TTN Temp
+   Vs:       322
+M: ADC
+   Val:      1381
+   Ics:     ~-162.743nA
+M: TIM2 PWM Out
+   DutyCyc:  %  0
+M: TTN Ambient Temp
+   Tmp:      30.76 [C]
+M: TTN Chamber Temp
+   Tmp:      26.39 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       501
+M: TTN Temp
+   Vs:       322
+M: ADC
+   Val:      1292
+   Ics:     ~-184.475nA
+M: TIM2 PWM Out
+   DutyCyc:  %  0
+M: TTN Ambient Temp
+   Tmp:      30.76 [C]
+M: TTN Chamber Temp
+   Tmp:      26.35 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       501
+M: TTN Temp
+   Vs:       322
+M: ADC
+   Val:      1358
+   Ics:     ~-168.359nA
+M: TIM2 PWM Out
+   DutyCyc:  %  0
+M: TTN Ambient Temp
+   Tmp:      30.77 [C]
+M: TTN Chamber Temp
+   Tmp:      26.39 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       501
+M: TTN Temp
+   Vs:       322
+M: ADC
+   Val:      1265
+   Ics:     ~-191.068nA
+M: TIM2 PWM Out
+   DutyCyc:  %  0
+M: TTN Ambient Temp
+   Tmp:      30.80 [C]
+M: TTN Chamber Temp
+   Tmp:      26.39 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       501
+M: TTN Temp
+   Vs:       322
+M: ADC
+   Val:      2176
+   Ics:     ~31.377nA
+M: TIM2 PWM Out
+   DutyCyc:  %  0
+M: TTN Ambient Temp
+   Tmp:      30.80 [C]
+M: TTN Chamber Temp
+   Tmp:      26.38 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       501
+M: TTN Temp
+   Vs:       322
+M: ADC
+   Val:      1134
+   Ics:     ~-223.055nA
+M: TIM2 PWM Out
+   DutyCyc:  %  0
+M: TTN Ambient Temp
+   Tmp:      30.80 [C]
+M: TTN Chamber Temp
+   Tmp:      26.36 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       501
+M: TTN Temp
+   Vs:       322
+M: ADC
+   Val:      1241
+   Ics:     ~-196.928nA
+M: TIM2 PWM Out
+   DutyCyc:  %  0
+M: TTN Ambient Temp
+   Tmp:      30.83 [C]
+M: TTN Chamber Temp
+   Tmp:      26.38 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       501
+M: TTN Temp
+   Vs:       322
+M: ADC
+   Val:      1380
+   Ics:     ~-162.987nA
+M: TIM2 PWM Out
+   DutyCyc:  %  0
+M: TTN Ambient Temp
+   Tmp:      30.84 [C]
+M: TTN Chamber Temp
+   Tmp:      26.39 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       500
+M: TTN Temp
+   Vs:       322
+M: ADC
+   Val:      1371
+   Ics:     ~-165.185nA
+M: TIM2 PWM Out
+   DutyCyc:  %  0
+M: TTN Ambient Temp
+   Tmp:      30.86 [C]
+M: TTN Chamber Temp
+   Tmp:      26.40 [C]
+M: TTN Readout Vs
+M: TTN Temp Reg ON
+M: TTN Chem
+   Vs:       500
+M: TTN Temp
+   Vs:       322
+M: ADC
+   Val:      1331
+   Ics:     ~-174.952nA
+M: TIM2 PWM Out
+   DutyCyc:  %  0
+M: TTN Ambient Temp
+   Tmp:      30.87 [C]
+M: TTN Chamber Temp
+   Tmp:      26.38 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       500
+M: TTN Temp
+   Vs:       322
+M: ADC
+   Val:      1510
+   Ics:     ~-131.245nA
+M: TIM2 PWM Out
+   DutyCyc:  % 29
+M: TTN Ambient Temp
+   Tmp:      30.89 [C]
+M: TTN Chamber Temp
+   Tmp:      26.38 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       514
+M: TTN Temp
+   Vs:       323
+M: ADC
+   Val:      1718
+   Ics:     ~-80.456nA
+M: TIM2 PWM Out
+   DutyCyc:  % 29
+M: TTN Ambient Temp
+   Tmp:      30.90 [C]
+M: TTN Chamber Temp
+   Tmp:      26.36 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       517
+M: TTN Temp
+   Vs:       326
+M: ADC
+   Val:      1137
+   Ics:     ~-222.322nA
+M: TIM2 PWM Out
+   DutyCyc:  % 29
+M: TTN Ambient Temp
+   Tmp:      30.93 [C]
+M: TTN Chamber Temp
+   Tmp:      26.40 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       519
+M: TTN Temp
+   Vs:       328
+M: ADC
+   Val:      1528
+   Ics:     ~-126.849nA
+M: TIM2 PWM Out
+   DutyCyc:  % 29
+M: TTN Ambient Temp
+   Tmp:      30.97 [C]
+M: TTN Chamber Temp
+   Tmp:      26.40 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       520
+M: TTN Temp
+   Vs:       330
+M: ADC
+   Val:      1456
+   Ics:     ~-144.430nA
+M: TIM2 PWM Out
+   DutyCyc:  % 29
+M: TTN Ambient Temp
+   Tmp:      30.97 [C]
+M: TTN Chamber Temp
+   Tmp:      26.40 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       521
+M: TTN Temp
+   Vs:       331
+M: ADC
+   Val:      1079
+   Ics:     ~-236.484nA
+M: TIM2 PWM Out
+   DutyCyc:  % 29
+M: TTN Ambient Temp
+   Tmp:      31.00 [C]
+M: TTN Chamber Temp
+   Tmp:      26.38 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       522
+M: TTN Temp
+   Vs:       332
+M: ADC
+   Val:      1624
+   Ics:     ~-103.408nA
+M: TIM2 PWM Out
+   DutyCyc:  % 29
+M: TTN Ambient Temp
+   Tmp:      31.01 [C]
+M: TTN Chamber Temp
+   Tmp:      26.42 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       523
+M: TTN Temp
+   Vs:       334
+M: ADC
+   Val:      1144
+   Ics:     ~-220.613nA
+M: TIM2 PWM Out
+   DutyCyc:  % 29
+M: TTN Ambient Temp
+   Tmp:      31.01 [C]
+M: TTN Chamber Temp
+   Tmp:      26.40 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       523
+M: TTN Temp
+   Vs:       334
+M: ADC
+   Val:      1339
+   Ics:     ~-172.999nA
+M: TIM2 PWM Out
+   DutyCyc:  % 29
+M: TTN Ambient Temp
+   Tmp:      31.04 [C]
+M: TTN Chamber Temp
+   Tmp:      26.40 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       524
+M: TTN Temp
+   Vs:       335
+M: ADC
+   Val:      1405
+   Ics:     ~-156.883nA
+M: TIM2 PWM Out
+   DutyCyc:  % 29
+M: TTN Ambient Temp
+   Tmp:      31.04 [C]
+M: TTN Chamber Temp
+   Tmp:      26.42 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       524
+M: TTN Temp
+   Vs:       336
+M: ADC
+   Val:      1284
+   Ics:     ~-186.428nA
+M: TIM2 PWM Out
+   DutyCyc:  % 29
+M: TTN Ambient Temp
+   Tmp:      31.06 [C]
+M: TTN Chamber Temp
+   Tmp:      26.44 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       524
+M: TTN Temp
+   Vs:       336
+M: ADC
+   Val:      1615
+   Ics:     ~-105.606nA
+M: TIM2 PWM Out
+   DutyCyc:  % 29
+M: TTN Ambient Temp
+   Tmp:      31.07 [C]
+M: TTN Chamber Temp
+   Tmp:      26.44 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       525
+M: TTN Temp
+   Vs:       338
+M: ADC
+   Val:      1188
+   Ics:     ~-209.869nA
+M: TIM2 PWM Out
+   DutyCyc:  % 29
+M: TTN Ambient Temp
+   Tmp:      31.08 [C]
+M: TTN Chamber Temp
+   Tmp:      26.46 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       525
+M: TTN Temp
+   Vs:       337
+M: ADC
+   Val:      1308
+   Ics:     ~-180.568nA
+M: TIM2 PWM Out
+   DutyCyc:  % 29
+M: TTN Ambient Temp
+   Tmp:      31.11 [C]
+M: TTN Chamber Temp
+   Tmp:      26.44 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       525
+M: TTN Temp
+   Vs:       338
+M: ADC
+   Val:      1365
+   Ics:     ~-166.650nA
+M: TIM2 PWM Out
+   DutyCyc:  % 29
+M: TTN Ambient Temp
+   Tmp:      31.11 [C]
+M: TTN Chamber Temp
+   Tmp:      26.46 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       525
+M: TTN Temp
+   Vs:       339
+M: ADC
+   Val:      1499
+   Ics:     ~-133.930nA
+M: TIM2 PWM Out
+   DutyCyc:  % 29
+M: TTN Ambient Temp
+   Tmp:      31.13 [C]
+M: TTN Chamber Temp
+   Tmp:      26.50 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       525
+M: TTN Temp
+   Vs:       339
+M: ADC
+   Val:      1595
+   Ics:     ~-110.490nA
+M: TIM2 PWM Out
+   DutyCyc:  % 29
+M: TTN Ambient Temp
+   Tmp:      31.14 [C]
+M: TTN Chamber Temp
+   Tmp:      26.49 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       525
+M: TTN Temp
+   Vs:       341
+M: ADC
+   Val:      1371
+   Ics:     ~-165.185nA
+M: TIM2 PWM Out
+   DutyCyc:  % 29
+M: TTN Ambient Temp
+   Tmp:      31.17 [C]
+M: TTN Chamber Temp
+   Tmp:      26.50 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       525
+M: TTN Temp
+   Vs:       340
+M: ADC
+   Val:      1337
+   Ics:     ~-173.487nA
+M: TIM2 PWM Out
+   DutyCyc:  % 29
+M: TTN Ambient Temp
+   Tmp:      31.16 [C]
+M: TTN Chamber Temp
+   Tmp:      26.53 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       525
+M: TTN Temp
+   Vs:       340
+M: ADC
+   Val:      1335
+   Ics:     ~-173.975nA
+M: TIM2 PWM Out
+   DutyCyc:  % 29
+M: TTN Ambient Temp
+   Tmp:      31.18 [C]
+M: TTN Chamber Temp
+   Tmp:      26.54 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       525
+M: TTN Temp
+   Vs:       341
+M: ADC
+   Val:      1360
+   Ics:     ~-167.871nA
+M: TIM2 PWM Out
+   DutyCyc:  % 29
+M: TTN Ambient Temp
+   Tmp:      31.20 [C]
+M: TTN Chamber Temp
+   Tmp:      26.53 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       525
+M: TTN Temp
+   Vs:       341
+M: ADC
+   Val:      1332
+   Ics:     ~-174.708nA
+M: TIM2 PWM Out
+   DutyCyc:  % 29
+M: TTN Ambient Temp
+   Tmp:      31.21 [C]
+M: TTN Chamber Temp
+   Tmp:      26.54 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       525
+M: TTN Temp
+   Vs:       342
+M: ADC
+   Val:      1466
+   Ics:     ~-141.988nA
+M: TIM2 PWM Out
+   DutyCyc:  % 29
+M: TTN Ambient Temp
+   Tmp:      31.21 [C]
+M: TTN Chamber Temp
+   Tmp:      26.58 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       525
+M: TTN Temp
+   Vs:       342
+M: ADC
+   Val:      1326
+   Ics:     ~-176.173nA
+M: TIM2 PWM Out
+   DutyCyc:  % 29
+M: TTN Ambient Temp
+   Tmp:      31.22 [C]
+M: TTN Chamber Temp
+   Tmp:      26.61 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       525
+M: TTN Temp
+   Vs:       342
+M: ADC
+   Val:      1324
+   Ics:     ~-176.661nA
+M: TIM2 PWM Out
+   DutyCyc:  % 29
+M: TTN Ambient Temp
+   Tmp:      31.24 [C]
+M: TTN Chamber Temp
+   Tmp:      26.63 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       526
+M: TTN Temp
+   Vs:       343
+M: ADC
+   Val:      1328
+   Ics:     ~-175.685nA
+M: TIM2 PWM Out
+   DutyCyc:  % 29
+M: TTN Ambient Temp
+   Tmp:      31.25 [C]
+M: TTN Chamber Temp
+   Tmp:      26.66 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       525
+M: TTN Temp
+   Vs:       343
+M: ADC
+   Val:      1356
+   Ics:     ~-168.848nA
+M: TIM2 PWM Out
+   DutyCyc:  % 29
+M: TTN Ambient Temp
+   Tmp:      31.28 [C]
+M: TTN Chamber Temp
+   Tmp:      26.68 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       525
+M: TTN Temp
+   Vs:       344
+M: ADC
+   Val:      1358
+   Ics:     ~-168.359nA
+M: TIM2 PWM Out
+   DutyCyc:  % 29
+M: TTN Ambient Temp
+   Tmp:      31.25 [C]
+M: TTN Chamber Temp
+   Tmp:      26.68 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       525
+M: TTN Temp
+   Vs:       344
+M: ADC
+   Val:      1927
+   Ics:     ~-29.423nA
+M: TIM2 PWM Out
+   DutyCyc:  % 29
+M: TTN Ambient Temp
+   Tmp:      31.29 [C]
+M: TTN Chamber Temp
+   Tmp:      26.71 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       525
+M: TTN Temp
+   Vs:       344
+M: ADC
+   Val:      1408
+   Ics:     ~-156.150nA
+M: TIM2 PWM Out
+   DutyCyc:  % 29
+M: TTN Ambient Temp
+   Tmp:      31.28 [C]
+M: TTN Chamber Temp
+   Tmp:      26.73 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       525
+M: TTN Temp
+   Vs:       345
+M: ADC
+   Val:      1126
+   Ics:     ~-225.008nA
+M: TIM2 PWM Out
+   DutyCyc:  % 29
+M: TTN Ambient Temp
+   Tmp:      31.28 [C]
+M: TTN Chamber Temp
+   Tmp:      26.74 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       525
+M: TTN Temp
+   Vs:       345
+M: ADC
+   Val:      1393
+   Ics:     ~-159.813nA
+M: TIM2 PWM Out
+   DutyCyc:  % 29
+M: TTN Ambient Temp
+   Tmp:      31.34 [C]
+M: TTN Chamber Temp
+   Tmp:      26.77 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       525
+M: TTN Temp
+   Vs:       345
+M: ADC
+   Val:      1442
+   Ics:     ~-147.848nA
+M: TIM2 PWM Out
+   DutyCyc:  % 29
+M: TTN Ambient Temp
+   Tmp:      31.35 [C]
+M: TTN Chamber Temp
+   Tmp:      26.75 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       525
+M: TTN Temp
+   Vs:       345
+M: ADC
+   Val:      1859
+   Ics:     ~-46.027nA
+M: TIM2 PWM Out
+   DutyCyc:  % 29
+M: TTN Ambient Temp
+   Tmp:      31.38 [C]
+M: TTN Chamber Temp
+   Tmp:      26.80 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       525
+M: TTN Temp
+   Vs:       346
+M: ADC
+   Val:      1447
+   Ics:     ~-146.628nA
+M: TIM2 PWM Out
+   DutyCyc:  % 29
+M: TTN Ambient Temp
+   Tmp:      31.36 [C]
+M: TTN Chamber Temp
+   Tmp:      26.81 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       525
+M: TTN Temp
+   Vs:       346
+M: ADCM: TTN Temp PID ON
+
+   Val:      1332
+   Ics:     ~-174.708nA
+M: TIM2 PWM Out
+   DutyCyc:  % 29
+M: TTN Ambient Temp
+   Tmp:      31.39 [C]
+M: TTN Chamber Temp
+   Tmp:      26.83 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       525
+M: TTN Temp
+   Vs:       347
+M: ADC
+   Val:      1685
+   Ics:     ~-88.514nA
+M: TIM2 PWM Out
+   DutyCyc:  % 58
+M: TTN Ambient Temp
+   Tmp:      31.38 [C]
+M: TTN Chamber Temp
+   Tmp:      26.85 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       573
+M: TTN Temp
+   Vs:       352
+M: ADC
+   Val:      1862
+   Ics:     ~-45.295nA
+M: TIM2 PWM Out
+   DutyCyc:  % 48
+M: TTN Ambient Temp
+   Tmp:      31.39 [C]
+M: TTN Chamber Temp
+   Tmp:      26.90 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       562
+M: TTN Temp
+   Vs:       356
+M: ADC
+   Val:      1504
+   Ics:     ~-132.710nA
+M: TIM2 PWM Out
+   DutyCyc:  % 49
+M: TTN Ambient Temp
+   Tmp:      31.45 [C]
+M: TTN Chamber Temp
+   Tmp:      26.92 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       562
+M: TTN Temp
+   Vs:       358
+M: ADC
+   Val:      1399
+   Ics:     ~-158.348nA
+M: TIM2 PWM Out
+   DutyCyc:  % 52
+M: TTN Ambient Temp
+   Tmp:      31.42 [C]
+M: TTN Chamber Temp
+   Tmp:      26.99 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       565
+M: TTN Temp
+   Vs:       359
+M: ADC
+   Val:      1363
+   Ics:     ~-167.138nA
+M: TIM2 PWM Out
+   DutyCyc:  % 51
+M: TTN Ambient Temp
+   Tmp:      31.46 [C]
+M: TTN Chamber Temp
+   Tmp:      27.02 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       565
+M: TTN Temp
+   Vs:       361
+M: ADC
+   Val:      1396
+   Ics:     ~-159.081nA
+M: TIM2 PWM Out
+   DutyCyc:  % 49
+M: TTN Ambient Temp
+   Tmp:      31.45 [C]
+M: TTN Chamber Temp
+   Tmp:      27.05 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       564
+M: TTN Temp
+   Vs:       362
+M: ADC
+   Val:      1143
+   Ics:     ~-220.857nA
+M: TIM2 PWM Out
+   DutyCyc:  % 48
+M: TTN Ambient Temp
+   Tmp:      31.48 [C]
+M: TTN Chamber Temp
+   Tmp:      27.09 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       563
+M: TTN Temp
+   Vs:       363
+M: ADC
+   Val:      1594
+   Ics:     ~-110.734nA
+M: TIM2 PWM Out
+   DutyCyc:  % 47
+M: TTN Ambient Temp
+   Tmp:      31.46 [C]
+M: TTN Chamber Temp
+   Tmp:      27.15 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       562
+M: TTN Temp
+   Vs:       364
+M: ADC
+   Val:      1606
+   Ics:     ~-107.804nA
+M: TIM2 PWM Out
+   DutyCyc:  % 46
+M: TTN Ambient Temp
+   Tmp:      31.46 [C]
+M: TTN Chamber Temp
+   Tmp:      27.16 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       560
+M: TTN Temp
+   Vs:       365
+M: ADC
+   Val:      1566
+   Ics:     ~-117.571nA
+M: TIM2 PWM Out
+   DutyCyc:  % 45
+M: TTN Ambient Temp
+   Tmp:      31.49 [C]
+M: TTN Chamber Temp
+   Tmp:      27.22 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       558
+M: TTN Temp
+   Vs:       366
+M: ADC
+   Val:      1238
+   Ics:     ~-197.660nA
+M: TIM2 PWM Out
+   DutyCyc:  % 44
+M: TTN Ambient Temp
+   Tmp:      31.52 [C]
+M: TTN Chamber Temp
+   Tmp:      27.24 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       556
+M: TTN Temp
+   Vs:       366
+M: ADC
+   Val:      1349
+   Ics:     ~-170.557nA
+M: TIM2 PWM Out
+   DutyCyc:  % 45
+M: TTN Ambient Temp
+   Tmp:      31.50 [C]
+M: TTN Chamber Temp
+   Tmp:      27.32 [C]
+M: TTN Readout Vs
+M: TTN Temp
+   Ref:      368
+M: TTN Chem
+   Vs:       556
+M: TTN Temp
+   Vs:       367
+M: ADC
+   Val:      1413
+   Ics:     ~-154.930nA
+M: TIM2 PWM Out
+   DutyCyc:  % 43
+M: TTN Ambient Temp
+   Tmp:      31.55 [C]
+M: TTN Chamber Temp
+   Tmp:      27.33 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       554
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1452
+   Ics:     ~-145.407nA
+M: TIM2 PWM Out
+   DutyCyc:  % 45
+M: TTN Ambient Temp
+   Tmp:      31.52 [C]
+M: TTN Chamber Temp
+   Tmp:      27.37 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       554
+M: TTN Temp
+   Vs:       369
+M: ADC
+   Val:      1139
+   Ics:     ~-221.834nA
+M: TIM2 PWM Out
+   DutyCyc:  % 42
+M: TTN Ambient Temp
+   Tmp:      31.58 [C]
+M: TTN Chamber Temp
+   Tmp:      27.44 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       551
+M: TTN Temp
+   Vs:       369
+M: ADC
+   Val:      1405
+   Ics:     ~-156.883nA
+M: TIM2 PWM Out
+   DutyCyc:  % 42
+M: TTN Ambient Temp
+   Tmp:      31.56 [C]
+M: TTN Chamber Temp
+   Tmp:      27.50 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       550
+M: TTN Temp
+   Vs:       370
+M: ADC
+   Val:      1379
+   Ics:     ~-163.232nA
+M: TIM2 PWM Out
+   DutyCyc:  % 40
+M: TTN Ambient Temp
+   Tmp:      31.58 [C]
+M: TTN Chamber Temp
+   Tmp:      27.50 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       546
+M: TTN Temp
+   Vs:       369
+M: ADC
+   Val:      1367
+   Ics:     ~-166.162nA
+M: TIM2 PWM Out
+   DutyCyc:  % 41
+M: TTN Ambient Temp
+   Tmp:      31.61 [C]
+M: TTN Chamber Temp
+   Tmp:      27.56 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       546
+M: TTN Temp
+   Vs:       371
+M: ADC
+   Val:      1013
+   Ics:     ~-252.600nA
+M: TIM2 PWM Out
+   DutyCyc:  % 36
+M: TTN Ambient Temp
+   Tmp:      31.65 [C]
+M: TTN Chamber Temp
+   Tmp:      27.60 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       539
+M: TTN Temp
+   Vs:       370
+M: ADC
+   Val:      1346
+   Ics:     ~-171.289nA
+M: TIM2 PWM Out
+   DutyCyc:  % 38
+M: TTN Ambient Temp
+   Tmp:      31.63 [C]
+M: TTN Chamber Temp
+   Tmp:      27.64 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       538
+M: TTN Temp
+   Vs:       371
+M: ADC
+   Val:      1206
+   Ics:     ~-205.474nA
+M: TIM2 PWM Out
+   DutyCyc:  % 34
+M: TTN Ambient Temp
+   Tmp:      31.66 [C]
+M: TTN Chamber Temp
+   Tmp:      27.71 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       533
+M: TTN Temp
+   Vs:       369
+M: ADC
+   Val:      1192
+   Ics:     ~-208.892nA
+M: TIM2 PWM Out
+   DutyCyc:  % 37
+M: TTN Ambient Temp
+   Tmp:      31.68 [C]
+M: TTN Chamber Temp
+   Tmp:      27.75 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       533
+M: TTN Temp
+   Vs:       370
+M: ADC
+   Val:      1385
+   Ics:     ~-161.766nA
+M: TIM2 PWM Out
+   DutyCyc:  % 34
+M: TTN Ambient Temp
+   Tmp:      31.66 [C]
+M: TTN Chamber Temp
+   Tmp:      27.81 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       531
+M: TTN Temp
+   Vs:       370
+M: ADC
+   Val:      1141
+   Ics:     ~-221.345nA
+M: TIM2 PWM Out
+   DutyCyc:  % 33
+M: TTN Ambient Temp
+   Tmp:      31.70 [C]
+M: TTN Chamber Temp
+   Tmp:      27.85 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       528
+M: TTN Temp
+   Vs:       369
+M: ADC
+   Val:      1298
+   Ics:     ~-183.010nA
+M: TIM2 PWM Out
+   DutyCyc:  % 34
+M: TTN Ambient Temp
+   Tmp:      31.72 [C]
+M: TTN Chamber Temp
+   Tmp:      27.89 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       528
+M: TTN Temp
+   Vs:       370
+M: ADC
+   Val:      1099
+   Ics:     ~-231.601nA
+M: TIM2 PWM Out
+   DutyCyc:  % 31
+M: TTN Ambient Temp
+   Tmp:      31.73 [C]
+M: TTN Chamber Temp
+   Tmp:      27.94 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       524
+M: TTN Temp
+   Vs:       369
+M: ADC
+   Val:      1306
+   Ics:     ~-181.056nA
+M: TIM2 PWM Out
+   DutyCyc:  % 33
+M: TTN Ambient Temp
+   Tmp:      31.75 [C]
+M: TTN Chamber Temp
+   Tmp:      27.99 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       524
+M: TTN Temp
+   Vs:       369
+M: ADC
+   Val:      1447
+   Ics:     ~-146.628nA
+M: TIM2 PWM Out
+   DutyCyc:  % 32
+M: TTN Ambient Temp
+   Tmp:      31.79 [C]
+M: TTN Chamber Temp
+   Tmp:      28.02 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       522
+M: TTN Temp
+   Vs:       369
+M: ADC
+   Val:      1226
+   Ics:     ~-200.590nA
+M: TIM2 PWM Out
+   DutyCyc:  % 31
+M: TTN Ambient Temp
+   Tmp:      31.77 [C]
+M: TTN Chamber Temp
+   Tmp:      28.08 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       520
+M: TTN Temp
+   Vs:       369
+M: ADC
+   Val:      1444
+   Ics:     ~-147.360nA
+M: TIM2 PWM Out
+   DutyCyc:  % 31
+M: TTN Ambient Temp
+   Tmp:      31.79 [C]
+M: TTN Chamber Temp
+   Tmp:      28.12 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       519
+M: TTN Temp
+   Vs:       369
+M: ADC
+   Val:      1385
+   Ics:     ~-161.766nA
+M: TIM2 PWM Out
+   DutyCyc:  % 30
+M: TTN Ambient Temp
+   Tmp:      31.81 [C]
+M: TTN Chamber Temp
+   Tmp:      28.16 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       517
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1345
+   Ics:     ~-171.534nA
+M: TIM2 PWM Out
+   DutyCyc:  % 32
+M: TTN Ambient Temp
+   Tmp:      31.81 [C]
+M: TTN Chamber Temp
+   Tmp:      28.18 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       517
+M: TTN Temp
+   Vs:       369
+M: ADC
+   Val:      1450
+   Ics:     ~-145.895nA
+M: TIM2 PWM Out
+   DutyCyc:  % 29
+M: TTN Ambient Temp
+   Tmp:      31.80 [C]
+M: TTN Chamber Temp
+   Tmp:      28.22 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       514
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1283
+   Ics:     ~-186.672nA
+M: TIM2 PWM Out
+   DutyCyc:  % 31
+M: TTN Ambient Temp
+   Tmp:      31.84 [C]
+M: TTN Chamber Temp
+   Tmp:      28.29 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       514
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1067
+   Ics:     ~-239.414nA
+M: TIM2 PWM Out
+   DutyCyc:  % 31
+M: TTN Ambient Temp
+   Tmp:      31.87 [C]
+M: TTN Chamber Temp
+   Tmp:      28.29 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       514
+M: TTN Temp
+   Vs:       369
+M: ADC
+   Val:      1367
+   Ics:     ~-166.162nA
+M: TIM2 PWM Out
+   DutyCyc:  % 29
+M: TTN Ambient Temp
+   Tmp:      31.88 [C]
+M: TTN Chamber Temp
+   Tmp:      28.35 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       511
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1352
+   Ics:     ~-169.824nA
+M: TIM2 PWM Out
+   DutyCyc:  % 31
+M: TTN Ambient Temp
+   Tmp:      31.87 [C]
+M: TTN Chamber Temp
+   Tmp:      28.39 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       511
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1359
+   Ics:     ~-168.115nA
+M: TIM2 PWM Out
+   DutyCyc:  % 30
+M: TTN Ambient Temp
+   Tmp:      31.90 [C]
+M: TTN Chamber Temp
+   Tmp:      28.37 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       511
+M: TTN Temp
+   Vs:       369
+M: ADC
+   Val:      2088
+   Ics:     ~9.889nA
+M: TIM2 PWM Out
+   DutyCyc:  % 28
+M: TTN Ambient Temp
+   Tmp:      31.93 [C]
+M: TTN Chamber Temp
+   Tmp:      28.43 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       508
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1404
+   Ics:     ~-157.127nA
+M: TIM2 PWM Out
+   DutyCyc:  % 30
+M: TTN Ambient Temp
+   Tmp:      31.93 [C]
+M: TTN Chamber Temp
+   Tmp:      28.46 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       508
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1512
+   Ics:     ~-130.756nA
+M: TIM2 PWM Out
+   DutyCyc:  % 30
+M: TTN Ambient Temp
+   Tmp:      31.96 [C]
+M: TTN Chamber Temp
+   Tmp:      28.50 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       508
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1492
+   Ics:     ~-135.640nA
+M: TIM2 PWM Out
+   DutyCyc:  % 30
+M: TTN Ambient Temp
+   Tmp:      31.94 [C]
+M: TTN Chamber Temp
+   Tmp:      28.55 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       507
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1408
+   Ics:     ~-156.150nA
+M: TIM2 PWM Out
+   DutyCyc:  % 30
+M: TTN Ambient Temp
+   Tmp:      31.97 [C]
+M: TTN Chamber Temp
+   Tmp:      28.55 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       507
+M: TTN Temp
+   Vs:       369
+M: ADC
+   Val:      1383
+   Ics:     ~-162.255nA
+M: TIM2 PWM Out
+   DutyCyc:  % 28
+M: TTN Ambient Temp
+   Tmp:      31.98 [C]
+M: TTN Chamber Temp
+   Tmp:      28.60 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       504
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1384
+   Ics:     ~-162.011nA
+M: TIM2 PWM Out
+   DutyCyc:  % 30
+M: TTN Ambient Temp
+   Tmp:      31.98 [C]
+M: TTN Chamber Temp
+   Tmp:      28.61 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       504
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1334
+   Ics:     ~-174.219nA
+M: TIM2 PWM Out
+   DutyCyc:  % 29
+M: TTN Ambient Temp
+   Tmp:      31.96 [C]
+M: TTN Chamber Temp
+   Tmp:      28.65 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       504
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1072
+   Ics:     ~-238.194nA
+M: TIM2 PWM Out
+   DutyCyc:  % 29
+M: TTN Ambient Temp
+   Tmp:      32.00 [C]
+M: TTN Chamber Temp
+   Tmp:      28.70 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       503
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1598
+   Ics:     ~-109.757nA
+M: TIM2 PWM Out
+   DutyCyc:  % 29
+M: TTN Ambient Temp
+   Tmp:      32.00 [C]
+M: TTN Chamber Temp
+   Tmp:      28.71 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       502
+M: TTN Temp
+   Vs:       369
+M: ADC
+   Val:      1302
+   Ics:     ~-182.033nA
+M: TIM2 PWM Out
+   DutyCyc:  % 27
+M: TTN Ambient Temp
+   Tmp:      32.03 [C]
+M: TTN Chamber Temp
+   Tmp:      28.74 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       499
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1444
+   Ics:     ~-147.360nA
+M: TIM2 PWM Out
+   DutyCyc:  % 29
+M: TTN Ambient Temp
+   Tmp:      32.04 [C]
+M: TTN Chamber Temp
+   Tmp:      28.78 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       499
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1329
+   Ics:     ~-175.440nA
+M: TIM2 PWM Out
+   DutyCyc:  % 29
+M: TTN Ambient Temp
+   Tmp:      32.08 [C]
+M: TTN Chamber Temp
+   Tmp:      28.81 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       499
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1089
+   Ics:     ~-234.043nA
+M: TIM2 PWM Out
+   DutyCyc:  % 29
+M: TTN Ambient Temp
+   Tmp:      32.03 [C]
+M: TTN Chamber Temp
+   Tmp:      28.83 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       499
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1140
+   Ics:     ~-221.590nA
+M: TIM2 PWM Out
+   DutyCyc:  % 29
+M: TTN Ambient Temp
+   Tmp:      32.06 [C]
+M: TTN Chamber Temp
+   Tmp:      28.87 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       498
+M: TTN Temp
+   Vs:       369
+M: ADC
+   Val:      1824
+   Ics:     ~-54.573nA
+M: TIM2 PWM Out
+   DutyCyc:  % 27
+M: TTN Ambient Temp
+   Tmp:      32.07 [C]
+M: TTN Chamber Temp
+   Tmp:      28.88 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       496
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1717
+   Ics:     ~-80.700nA
+M: TIM2 PWM Out
+   DutyCyc:  % 29
+M: TTN Ambient Temp
+   Tmp:      32.06 [C]
+M: TTN Chamber Temp
+   Tmp:      28.92 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       496
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1022
+   Ics:     ~-250.402nA
+M: TIM2 PWM Out
+   DutyCyc:  % 28
+M: TTN Ambient Temp
+   Tmp:      32.08 [C]
+M: TTN Chamber Temp
+   Tmp:      28.94 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       495
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1116
+   Ics:     ~-227.450nA
+M: TIM2 PWM Out
+   DutyCyc:  % 28
+M: TTN Ambient Temp
+   Tmp:      32.08 [C]
+M: TTN Chamber Temp
+   Tmp:      28.94 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       495
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1150
+   Ics:     ~-219.148nA
+M: TIM2 PWM Out
+   DutyCyc:  % 28
+M: TTN Ambient Temp
+   Tmp:      32.13 [C]
+M: TTN Chamber Temp
+   Tmp:      28.98 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       494
+M: TTN Temp
+   Vs:       369
+M: ADC
+   Val:      1353
+   Ics:     ~-169.580nA
+M: TIM2 PWM Out
+   DutyCyc:  % 26
+M: TTN Ambient Temp
+   Tmp:      32.10 [C]
+M: TTN Chamber Temp
+   Tmp:      29.01 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       491
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1383
+   Ics:     ~-162.255nA
+M: TIM2 PWM Out
+   DutyCyc:  % 28
+M: TTN Ambient Temp
+   Tmp:      32.13 [C]
+M: TTN Chamber Temp
+   Tmp:      29.03 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       491
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1290
+   Ics:     ~-184.963nA
+M: TIM2 PWM Out
+   DutyCyc:  % 28
+M: TTN Ambient Temp
+   Tmp:      32.14 [C]
+M: TTN Chamber Temp
+   Tmp:      29.07 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       491
+M: TTN Temp
+   Vs:       369
+M: ADC
+   Val:      1265
+   Ics:     ~-191.068nA
+M: TIM2 PWM Out
+   DutyCyc:  % 26
+M: TTN Ambient Temp
+   Tmp:      32.13 [C]
+M: TTN Chamber Temp
+   Tmp:      29.07 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       489
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1434
+   Ics:     ~-149.802nA
+M: TIM2 PWM Out
+   DutyCyc:  % 28
+M: TTN Ambient Temp
+   Tmp:      32.14 [C]
+M: TTN Chamber Temp
+   Tmp:      29.09 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       489
+M: TTN Temp
+   Vs:       369
+M: ADC
+   Val:      1203
+   Ics:     ~-206.206nA
+M: TIM2 PWM Out
+   DutyCyc:  % 25
+M: TTN Ambient Temp
+   Tmp:      32.14 [C]
+M: TTN Chamber Temp
+   Tmp:      29.16 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       487
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1332
+   Ics:     ~-174.708nA
+M: TIM2 PWM Out
+   DutyCyc:  % 27
+M: TTN Ambient Temp
+   Tmp:      32.18 [C]
+M: TTN Chamber Temp
+   Tmp:      29.16 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       487
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1650
+   Ics:     ~-97.060nA
+M: TIM2 PWM Out
+   DutyCyc:  % 27
+M: TTN Ambient Temp
+   Tmp:      32.18 [C]
+M: TTN Chamber Temp
+   Tmp:      29.17 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       486
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1300
+   Ics:     ~-182.521nA
+M: TIM2 PWM Out
+   DutyCyc:  % 27
+M: TTN Ambient Temp
+   Tmp:      32.18 [C]
+M: TTN Chamber Temp
+   Tmp:      29.19 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       486
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      2136
+   Ics:     ~21.610nA
+M: TIM2 PWM Out
+   DutyCyc:  % 27
+M: TTN Ambient Temp
+   Tmp:      32.17 [C]
+M: TTN Chamber Temp
+   Tmp:      29.22 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       486
+M: TTN Temp
+   Vs:       369
+M: ADC
+   Val:      1268
+   Ics:     ~-190.335nA
+M: TIM2 PWM Out
+   DutyCyc:  % 25
+M: TTN Ambient Temp
+   Tmp:      32.18 [C]
+M: TTN Chamber Temp
+   Tmp:      29.23 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       483
+M: TTN Temp
+   Vs:       367
+M: ADC
+   Val:      1705
+   Ics:     ~-83.630nA
+M: TIM2 PWM Out
+   DutyCyc:  % 29
+M: TTN Ambient Temp
+   Tmp:      32.21 [C]
+M: TTN Chamber Temp
+   Tmp:      29.30 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       483
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1359
+   Ics:     ~-168.115nA
+M: TIM2 PWM Out
+   DutyCyc:  % 26
+M: TTN Ambient Temp
+   Tmp:      32.22 [C]
+M: TTN Chamber Temp
+   Tmp:      29.30 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       483
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1402
+   Ics:     ~-157.615nA
+M: TIM2 PWM Out
+   DutyCyc:  % 27
+M: TTN Ambient Temp
+   Tmp:      32.21 [C]
+M: TTN Chamber Temp
+   Tmp:      29.30 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       483
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1401
+   Ics:     ~-157.860nA
+M: TIM2 PWM Out
+   DutyCyc:  % 27
+M: TTN Ambient Temp
+   Tmp:      32.20 [C]
+M: TTN Chamber Temp
+   Tmp:      29.32 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       482
+M: TTN Temp
+   Vs:       369
+M: ADC
+   Val:      1227
+   Ics:     ~-200.346nA
+M: TIM2 PWM Out
+   DutyCyc:  % 25
+M: TTN Ambient Temp
+   Tmp:      32.24 [C]
+M: TTN Chamber Temp
+   Tmp:      29.34 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       480
+M: TTN Temp
+   Vs:       367
+M: ADC
+   Val:      1451
+   Ics:     ~-145.651nA
+M: TIM2 PWM Out
+   DutyCyc:  % 29
+M: TTN Ambient Temp
+   Tmp:      32.22 [C]
+M: TTN Chamber Temp
+   Tmp:      29.36 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       480
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1595
+   Ics:     ~-110.490nA
+M: TIM2 PWM Out
+   DutyCyc:  % 26
+M: TTN Ambient Temp
+   Tmp:      32.24 [C]
+M: TTN Chamber Temp
+   Tmp:      29.40 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       480
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1215
+   Ics:     ~-203.276nA
+M: TIM2 PWM Out
+   DutyCyc:  % 27
+M: TTN Ambient Temp
+   Tmp:      32.22 [C]
+M: TTN Chamber Temp
+   Tmp:      29.40 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       480
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1322
+   Ics:     ~-177.150nA
+M: TIM2 PWM Out
+   DutyCyc:  % 27
+M: TTN Ambient Temp
+   Tmp:      32.25 [C]
+M: TTN Chamber Temp
+   Tmp:      29.43 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       479
+M: TTN Temp
+   Vs:       369
+M: ADC
+   Val:      1228
+   Ics:     ~-200.102nA
+M: TIM2 PWM Out
+   DutyCyc:  % 25
+M: TTN Ambient Temp
+   Tmp:      32.28 [C]
+M: TTN Chamber Temp
+   Tmp:      29.47 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       477
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1280
+   Ics:     ~-187.405nA
+M: TIM2 PWM Out
+   DutyCyc:  % 27
+M: TTN Ambient Temp
+   Tmp:      32.25 [C]
+M: TTN Chamber Temp
+   Tmp:      29.48 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       477
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1302
+   Ics:     ~-182.033nA
+M: TIM2 PWM Out
+   DutyCyc:  % 26
+M: TTN Ambient Temp
+   Tmp:      32.27 [C]
+M: TTN Chamber Temp
+   Tmp:      29.48 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       477
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1085
+   Ics:     ~-235.019nA
+M: TIM2 PWM Out
+   DutyCyc:  % 26
+M: TTN Ambient Temp
+   Tmp:      32.28 [C]
+M: TTN Chamber Temp
+   Tmp:      29.50 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       476
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1492
+   Ics:     ~-135.640nA
+M: TIM2 PWM Out
+   DutyCyc:  % 26
+M: TTN Ambient Temp
+   Tmp:      32.27 [C]
+M: TTN Chamber Temp
+   Tmp:      29.51 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       476
+M: TTN Temp
+   Vs:       369
+M: ADC
+   Val:      1389
+   Ics:     ~-160.790nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.31 [C]
+M: TTN Chamber Temp
+   Tmp:      29.54 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       473
+M: TTN Temp
+   Vs:       367
+M: ADC
+   Val:      1665
+   Ics:     ~-93.397nA
+M: TIM2 PWM Out
+   DutyCyc:  % 28
+M: TTN Ambient Temp
+   Tmp:      32.30 [C]
+M: TTN Chamber Temp
+   Tmp:      29.54 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       474
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1366
+   Ics:     ~-166.406nA
+M: TIM2 PWM Out
+   DutyCyc:  % 26
+M: TTN Ambient Temp
+   Tmp:      32.28 [C]
+M: TTN Chamber Temp
+   Tmp:      29.58 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       473
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1388
+   Ics:     ~-161.034nA
+M: TIM2 PWM Out
+   DutyCyc:  % 26
+M: TTN Ambient Temp
+   Tmp:      32.32 [C]
+M: TTN Chamber Temp
+   Tmp:      29.60 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       473
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1531
+   Ics:     ~-126.117nA
+M: TIM2 PWM Out
+   DutyCyc:  % 26
+M: TTN Ambient Temp
+   Tmp:      32.34 [C]
+M: TTN Chamber Temp
+   Tmp:      29.63 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       472
+M: TTN Temp
+   Vs:       369
+M: ADC
+   Val:      1106
+   Ics:     ~-229.892nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.32 [C]
+M: TTN Chamber Temp
+   Tmp:      29.64 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       470
+M: TTN Temp
+   Vs:       367
+M: ADC
+   Val:      1538
+   Ics:     ~-124.408nA
+M: TIM2 PWM Out
+   DutyCyc:  % 28
+M: TTN Ambient Temp
+   Tmp:      32.35 [C]
+M: TTN Chamber Temp
+   Tmp:      29.64 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       470
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1294
+   Ics:     ~-183.986nA
+M: TIM2 PWM Out
+   DutyCyc:  % 26
+M: TTN Ambient Temp
+   Tmp:      32.34 [C]
+M: TTN Chamber Temp
+   Tmp:      29.67 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       470
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1258
+   Ics:     ~-192.777nA
+M: TIM2 PWM Out
+   DutyCyc:  % 26
+M: TTN Ambient Temp
+   Tmp:      32.35 [C]
+M: TTN Chamber Temp
+   Tmp:      29.67 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       470
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1419
+   Ics:     ~-153.464nA
+M: TIM2 PWM Out
+   DutyCyc:  % 26
+M: TTN Ambient Temp
+   Tmp:      32.36 [C]
+M: TTN Chamber Temp
+   Tmp:      29.68 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       470
+M: TTN Temp
+   Vs:       369
+M: ADC
+   Val:      1225
+   Ics:     ~-200.835nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.35 [C]
+M: TTN Chamber Temp
+   Tmp:      29.72 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       467
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1364
+   Ics:     ~-166.894nA
+M: TIM2 PWM Out
+   DutyCyc:  % 26
+M: TTN Ambient Temp
+   Tmp:      32.35 [C]
+M: TTN Chamber Temp
+   Tmp:      29.75 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       467
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1289
+   Ics:     ~-185.207nA
+M: TIM2 PWM Out
+   DutyCyc:  % 26
+M: TTN Ambient Temp
+   Tmp:      32.38 [C]
+M: TTN Chamber Temp
+   Tmp:      29.76 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       467
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1370
+   Ics:     ~-165.429nA
+M: TIM2 PWM Out
+   DutyCyc:  % 26
+M: TTN Ambient Temp
+   Tmp:      32.36 [C]
+M: TTN Chamber Temp
+   Tmp:      29.78 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       467
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1582
+   Ics:     ~-113.664nA
+M: TIM2 PWM Out
+   DutyCyc:  % 26
+M: TTN Ambient Temp
+   Tmp:      32.39 [C]
+M: TTN Chamber Temp
+   Tmp:      29.81 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       467
+M: TTN Temp
+   Vs:       369
+M: ADC
+   Val:      1381
+   Ics:     ~-162.743nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.38 [C]
+M: TTN Chamber Temp
+   Tmp:      29.82 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       465
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1534
+   Ics:     ~-125.384nA
+M: TIM2 PWM Out
+   DutyCyc:  % 26
+M: TTN Ambient Temp
+   Tmp:      32.39 [C]
+M: TTN Chamber Temp
+   Tmp:      29.84 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       465
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1354
+   Ics:     ~-169.336nA
+M: TIM2 PWM Out
+   DutyCyc:  % 25
+M: TTN Ambient Temp
+   Tmp:      32.42 [C]
+M: TTN Chamber Temp
+   Tmp:      29.84 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       464
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1342
+   Ics:     ~-172.266nA
+M: TIM2 PWM Out
+   DutyCyc:  % 25
+M: TTN Ambient Temp
+   Tmp:      32.41 [C]
+M: TTN Chamber Temp
+   Tmp:      29.86 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       464
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1397
+   Ics:     ~-158.836nA
+M: TIM2 PWM Out
+   DutyCyc:  % 25
+M: TTN Ambient Temp
+   Tmp:      32.38 [C]
+M: TTN Chamber Temp
+   Tmp:      29.89 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       463
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1265
+   Ics:     ~-191.068nA
+M: TIM2 PWM Out
+   DutyCyc:  % 25
+M: TTN Ambient Temp
+   Tmp:      32.38 [C]
+M: TTN Chamber Temp
+   Tmp:      29.89 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       462
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1343
+   Ics:     ~-172.022nA
+M: TIM2 PWM Out
+   DutyCyc:  % 25
+M: TTN Ambient Temp
+   Tmp:      32.41 [C]
+M: TTN Chamber Temp
+   Tmp:      29.89 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       462
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1163
+   Ics:     ~-215.974nA
+M: TIM2 PWM Out
+   DutyCyc:  % 25
+M: TTN Ambient Temp
+   Tmp:      32.42 [C]
+M: TTN Chamber Temp
+   Tmp:      29.92 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       462
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1322
+   Ics:     ~-177.150nA
+M: TIM2 PWM Out
+   DutyCyc:  % 25
+M: TTN Ambient Temp
+   Tmp:      32.42 [C]
+M: TTN Chamber Temp
+   Tmp:      29.93 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       461
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1212
+   Ics:     ~-204.009nA
+M: TIM2 PWM Out
+   DutyCyc:  % 25
+M: TTN Ambient Temp
+   Tmp:      32.42 [C]
+M: TTN Chamber Temp
+   Tmp:      29.95 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       460
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1351
+   Ics:     ~-170.068nA
+M: TIM2 PWM Out
+   DutyCyc:  % 25
+M: TTN Ambient Temp
+   Tmp:      32.45 [C]
+M: TTN Chamber Temp
+   Tmp:      29.96 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       460
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1294
+   Ics:     ~-183.986nA
+M: TIM2 PWM Out
+   DutyCyc:  % 25
+M: TTN Ambient Temp
+   Tmp:      32.45 [C]
+M: TTN Chamber Temp
+   Tmp:      29.96 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       459
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1304
+   Ics:     ~-181.545nA
+M: TIM2 PWM Out
+   DutyCyc:  % 25
+M: TTN Ambient Temp
+   Tmp:      32.45 [C]
+M: TTN Chamber Temp
+   Tmp:      29.99 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       459
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1304
+   Ics:     ~-181.545nA
+M: TIM2 PWM Out
+   DutyCyc:  % 25
+M: TTN Ambient Temp
+   Tmp:      32.46 [C]
+M: TTN Chamber Temp
+   Tmp:      30.02 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       458
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1463
+   Ics:     ~-142.721nA
+M: TIM2 PWM Out
+   DutyCyc:  % 25
+M: TTN Ambient Temp
+   Tmp:      32.46 [C]
+M: TTN Chamber Temp
+   Tmp:      30.05 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       458
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1083
+   Ics:     ~-235.508nA
+M: TIM2 PWM Out
+   DutyCyc:  % 25
+M: TTN Ambient Temp
+   Tmp:      32.46 [C]
+M: TTN Chamber Temp
+   Tmp:      30.03 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       457
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1377
+   Ics:     ~-163.720nA
+M: TIM2 PWM Out
+   DutyCyc:  % 25
+M: TTN Ambient Temp
+   Tmp:      32.46 [C]
+M: TTN Chamber Temp
+   Tmp:      30.03 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       457
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1231
+   Ics:     ~-199.370nA
+M: TIM2 PWM Out
+   DutyCyc:  % 25
+M: TTN Ambient Temp
+   Tmp:      32.49 [C]
+M: TTN Chamber Temp
+   Tmp:      30.10 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       456
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1408
+   Ics:     ~-156.150nA
+M: TIM2 PWM Out
+   DutyCyc:  % 25
+M: TTN Ambient Temp
+   Tmp:      32.49 [C]
+M: TTN Chamber Temp
+   Tmp:      30.09 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       456
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1493
+   Ics:     ~-135.396nA
+M: TIM2 PWM Out
+   DutyCyc:  % 25
+M: TTN Ambient Temp
+   Tmp:      32.48 [C]
+M: TTN Chamber Temp
+   Tmp:      30.09 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       455
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1269
+   Ics:     ~-190.091nA
+M: TIM2 PWM Out
+   DutyCyc:  % 25
+M: TTN Ambient Temp
+   Tmp:      32.51 [C]
+M: TTN Chamber Temp
+   Tmp:      30.13 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       455
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1302
+   Ics:     ~-182.033nA
+M: TIM2 PWM Out
+   DutyCyc:  % 25
+M: TTN Ambient Temp
+   Tmp:      32.52 [C]
+M: TTN Chamber Temp
+   Tmp:      30.15 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       454
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1328
+   Ics:     ~-175.685nA
+M: TIM2 PWM Out
+   DutyCyc:  % 25
+M: TTN Ambient Temp
+   Tmp:      32.49 [C]
+M: TTN Chamber Temp
+   Tmp:      30.15 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       454
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1342
+   Ics:     ~-172.266nA
+M: TIM2 PWM Out
+   DutyCyc:  % 25
+M: TTN Ambient Temp
+   Tmp:      32.51 [C]
+M: TTN Chamber Temp
+   Tmp:      30.17 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       453
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1772
+   Ics:     ~-67.270nA
+M: TIM2 PWM Out
+   DutyCyc:  % 25
+M: TTN Ambient Temp
+   Tmp:      32.51 [C]
+M: TTN Chamber Temp
+   Tmp:      30.19 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       453
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1042
+   Ics:     ~-245.519nA
+M: TIM2 PWM Out
+   DutyCyc:  % 25
+M: TTN Ambient Temp
+   Tmp:      32.54 [C]
+M: TTN Chamber Temp
+   Tmp:      30.20 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       452
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1431
+   Ics:     ~-150.534nA
+M: TIM2 PWM Out
+   DutyCyc:  % 25
+M: TTN Ambient Temp
+   Tmp:      32.51 [C]
+M: TTN Chamber Temp
+   Tmp:      30.19 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       452
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1520
+   Ics:     ~-128.803nA
+M: TIM2 PWM Out
+   DutyCyc:  % 25
+M: TTN Ambient Temp
+   Tmp:      32.52 [C]
+M: TTN Chamber Temp
+   Tmp:      30.19 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       452
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1236
+   Ics:     ~-198.149nA
+M: TIM2 PWM Out
+   DutyCyc:  % 25
+M: TTN Ambient Temp
+   Tmp:      32.55 [C]
+M: TTN Chamber Temp
+   Tmp:      30.20 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       451
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1440
+   Ics:     ~-148.337nA
+M: TIM2 PWM Out
+   DutyCyc:  % 25
+M: TTN Ambient Temp
+   Tmp:      32.54 [C]
+M: TTN Chamber Temp
+   Tmp:      30.26 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       450
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1283
+   Ics:     ~-186.672nA
+M: TIM2 PWM Out
+   DutyCyc:  % 25
+M: TTN Ambient Temp
+   Tmp:      32.56 [C]
+M: TTN Chamber Temp
+   Tmp:      30.26 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       450
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1244
+   Ics:     ~-196.195nA
+M: TIM2 PWM Out
+   DutyCyc:  % 25
+M: TTN Ambient Temp
+   Tmp:      32.55 [C]
+M: TTN Chamber Temp
+   Tmp:      30.27 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       449
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1335
+   Ics:     ~-173.975nA
+M: TIM2 PWM Out
+   DutyCyc:  % 25
+M: TTN Ambient Temp
+   Tmp:      32.56 [C]
+M: TTN Chamber Temp
+   Tmp:      30.28 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       449
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1302
+   Ics:     ~-182.033nA
+M: TIM2 PWM Out
+   DutyCyc:  % 25
+M: TTN Ambient Temp
+   Tmp:      32.56 [C]
+M: TTN Chamber Temp
+   Tmp:      30.28 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       448
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1468
+   Ics:     ~-141.500nA
+M: TIM2 PWM Out
+   DutyCyc:  % 25
+M: TTN Ambient Temp
+   Tmp:      32.58 [C]
+M: TTN Chamber Temp
+   Tmp:      30.33 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       448
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1061
+   Ics:     ~-240.879nA
+M: TIM2 PWM Out
+   DutyCyc:  % 25
+M: TTN Ambient Temp
+   Tmp:      32.58 [C]
+M: TTN Chamber Temp
+   Tmp:      30.31 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       448
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      2091
+   Ics:     ~10.622nA
+M: TIM2 PWM Out
+   DutyCyc:  % 25
+M: TTN Ambient Temp
+   Tmp:      32.59 [C]
+M: TTN Chamber Temp
+   Tmp:      30.34 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       447
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1082
+   Ics:     ~-235.752nA
+M: TIM2 PWM Out
+   DutyCyc:  % 25
+M: TTN Ambient Temp
+   Tmp:      32.59 [C]
+M: TTN Chamber Temp
+   Tmp:      30.34 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       447
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1430
+   Ics:     ~-150.779nA
+M: TIM2 PWM Out
+   DutyCyc:  % 25
+M: TTN Ambient Temp
+   Tmp:      32.61 [C]
+M: TTN Chamber Temp
+   Tmp:      30.36 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       446
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1303
+   Ics:     ~-181.789nA
+M: TIM2 PWM Out
+   DutyCyc:  % 25
+M: TTN Ambient Temp
+   Tmp:      32.58 [C]
+M: TTN Chamber Temp
+   Tmp:      30.37 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       446
+M: TTN Temp
+   Vs:       369
+M: ADC
+   Val:      1261
+   Ics:     ~-192.044nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      32.61 [C]
+M: TTN Chamber Temp
+   Tmp:      30.37 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       444
+M: TTN Temp
+   Vs:       367
+M: ADC
+   Val:      1324
+   Ics:     ~-176.661nA
+M: TIM2 PWM Out
+   DutyCyc:  % 27
+M: TTN Ambient Temp
+   Tmp:      32.61 [C]
+M: TTN Chamber Temp
+   Tmp:      30.40 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       444
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1101
+   Ics:     ~-231.112nA
+M: TIM2 PWM Out
+   DutyCyc:  % 25
+M: TTN Ambient Temp
+   Tmp:      32.66 [C]
+M: TTN Chamber Temp
+   Tmp:      30.43 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       444
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1406
+   Ics:     ~-156.639nA
+M: TIM2 PWM Out
+   DutyCyc:  % 25
+M: TTN Ambient Temp
+   Tmp:      32.62 [C]
+M: TTN Chamber Temp
+   Tmp:      30.43 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       443
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1575
+   Ics:     ~-115.373nA
+M: TIM2 PWM Out
+   DutyCyc:  % 25
+M: TTN Ambient Temp
+   Tmp:      32.61 [C]
+M: TTN Chamber Temp
+   Tmp:      30.41 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       443
+M: TTN Temp
+   Vs:       369
+M: ADC
+   Val:      1160
+   Ics:     ~-216.706nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      32.61 [C]
+M: TTN Chamber Temp
+   Tmp:      30.47 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       442
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1224
+   Ics:     ~-201.079nA
+M: TIM2 PWM Out
+   DutyCyc:  % 25
+M: TTN Ambient Temp
+   Tmp:      32.62 [C]
+M: TTN Chamber Temp
+   Tmp:      30.44 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       442
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1291
+   Ics:     ~-184.719nA
+M: TIM2 PWM Out
+   DutyCyc:  % 25
+M: TTN Ambient Temp
+   Tmp:      32.65 [C]
+M: TTN Chamber Temp
+   Tmp:      30.45 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       441
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1116
+   Ics:     ~-227.450nA
+M: TIM2 PWM Out
+   DutyCyc:  % 25
+M: TTN Ambient Temp
+   Tmp:      32.63 [C]
+M: TTN Chamber Temp
+   Tmp:      30.48 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       441
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1292
+   Ics:     ~-184.475nA
+M: TIM2 PWM Out
+   DutyCyc:  % 25
+M: TTN Ambient Temp
+   Tmp:      32.65 [C]
+M: TTN Chamber Temp
+   Tmp:      30.51 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       441
+M: TTN Temp
+   Vs:       369
+M: ADC
+   Val:      1136
+   Ics:     ~-222.566nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      32.66 [C]
+M: TTN Chamber Temp
+   Tmp:      30.51 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       439
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1215
+   Ics:     ~-203.276nA
+M: TIM2 PWM Out
+   DutyCyc:  % 25
+M: TTN Ambient Temp
+   Tmp:      32.65 [C]
+M: TTN Chamber Temp
+   Tmp:      30.51 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       439
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1730
+   Ics:     ~-77.526nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.67 [C]
+M: TTN Chamber Temp
+   Tmp:      30.52 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       439
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1448
+   Ics:     ~-146.383nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.67 [C]
+M: TTN Chamber Temp
+   Tmp:      30.54 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       438
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1479
+   Ics:     ~-138.814nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.67 [C]
+M: TTN Chamber Temp
+   Tmp:      30.55 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       438
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1350
+   Ics:     ~-170.313nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.67 [C]
+M: TTN Chamber Temp
+   Tmp:      30.58 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       437
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1250
+   Ics:     ~-194.730nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.67 [C]
+M: TTN Chamber Temp
+   Tmp:      30.61 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       437
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1674
+   Ics:     ~-91.200nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.69 [C]
+M: TTN Chamber Temp
+   Tmp:      30.61 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       437
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1329
+   Ics:     ~-175.440nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.69 [C]
+M: TTN Chamber Temp
+   Tmp:      30.62 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       436
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1629
+   Ics:     ~-102.188nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.69 [C]
+M: TTN Chamber Temp
+   Tmp:      30.62 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       436
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1335
+   Ics:     ~-173.975nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.70 [C]
+M: TTN Chamber Temp
+   Tmp:      30.61 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       435
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1492
+   Ics:     ~-135.640nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.72 [C]
+M: TTN Chamber Temp
+   Tmp:      30.64 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       435
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1159
+   Ics:     ~-216.950nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.70 [C]
+M: TTN Chamber Temp
+   Tmp:      30.65 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       435
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1256
+   Ics:     ~-193.265nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.67 [C]
+M: TTN Chamber Temp
+   Tmp:      30.67 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       434
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1423
+   Ics:     ~-152.488nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.72 [C]
+M: TTN Chamber Temp
+   Tmp:      30.67 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       434
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1033
+   Ics:     ~-247.716nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.73 [C]
+M: TTN Chamber Temp
+   Tmp:      30.69 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       433
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1218
+   Ics:     ~-202.544nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.73 [C]
+M: TTN Chamber Temp
+   Tmp:      30.69 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       433
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1336
+   Ics:     ~-173.731nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.72 [C]
+M: TTN Chamber Temp
+   Tmp:      30.74 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       432
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1131
+   Ics:     ~-223.787nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.75 [C]
+M: TTN Chamber Temp
+   Tmp:      30.72 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       432
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1774
+   Ics:     ~-66.782nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.75 [C]
+M: TTN Chamber Temp
+   Tmp:      30.74 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       431
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1494
+   Ics:     ~-135.151nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.75 [C]
+M: TTN Chamber Temp
+   Tmp:      30.75 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       431
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1316
+   Ics:     ~-178.615nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.77 [C]
+M: TTN Chamber Temp
+   Tmp:      30.74 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       431
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1305
+   Ics:     ~-181.301nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.76 [C]
+M: TTN Chamber Temp
+   Tmp:      30.75 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       431
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1263
+   Ics:     ~-191.556nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.77 [C]
+M: TTN Chamber Temp
+   Tmp:      30.77 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       430
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1290
+   Ics:     ~-184.963nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.76 [C]
+M: TTN Chamber Temp
+   Tmp:      30.77 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       430
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1290
+   Ics:     ~-184.963nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.77 [C]
+M: TTN Chamber Temp
+   Tmp:      30.79 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       429
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1374
+   Ics:     ~-164.452nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.76 [C]
+M: TTN Chamber Temp
+   Tmp:      30.81 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       429
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1253
+   Ics:     ~-193.998nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.75 [C]
+M: TTN Chamber Temp
+   Tmp:      30.81 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       428
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1301
+   Ics:     ~-182.277nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.76 [C]
+M: TTN Chamber Temp
+   Tmp:      30.83 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       428
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1255
+   Ics:     ~-193.509nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.77 [C]
+M: TTN Chamber Temp
+   Tmp:      30.82 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       428
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1249
+   Ics:     ~-194.974nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.79 [C]
+M: TTN Chamber Temp
+   Tmp:      30.86 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       427
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1361
+   Ics:     ~-167.627nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.80 [C]
+M: TTN Chamber Temp
+   Tmp:      30.85 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       427
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1253
+   Ics:     ~-193.998nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.82 [C]
+M: TTN Chamber Temp
+   Tmp:      30.85 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       427
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1250
+   Ics:     ~-194.730nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.82 [C]
+M: TTN Chamber Temp
+   Tmp:      30.88 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       426
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1302
+   Ics:     ~-182.033nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.80 [C]
+M: TTN Chamber Temp
+   Tmp:      30.88 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       426
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1332
+   Ics:     ~-174.708nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.82 [C]
+M: TTN Chamber Temp
+   Tmp:      30.89 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       425
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1415
+   Ics:     ~-154.441nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.80 [C]
+M: TTN Chamber Temp
+   Tmp:      30.90 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       425
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1380
+   Ics:     ~-162.987nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.83 [C]
+M: TTN Chamber Temp
+   Tmp:      30.90 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       425
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1121
+   Ics:     ~-226.229nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.83 [C]
+M: TTN Chamber Temp
+   Tmp:      30.93 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       424
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1331
+   Ics:     ~-174.952nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.82 [C]
+M: TTN Chamber Temp
+   Tmp:      30.92 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       424
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1278
+   Ics:     ~-187.893nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.84 [C]
+M: TTN Chamber Temp
+   Tmp:      30.93 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       424
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1211
+   Ics:     ~-204.253nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.83 [C]
+M: TTN Chamber Temp
+   Tmp:      30.95 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       423
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1274
+   Ics:     ~-188.870nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.84 [C]
+M: TTN Chamber Temp
+   Tmp:      30.95 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       423
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1429
+   Ics:     ~-151.023nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.84 [C]
+M: TTN Chamber Temp
+   Tmp:      30.97 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       423
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1564
+   Ics:     ~-118.059nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.86 [C]
+M: TTN Chamber Temp
+   Tmp:      30.99 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       422
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1767
+   Ics:     ~-68.491nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.86 [C]
+M: TTN Chamber Temp
+   Tmp:      30.97 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       422
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1287
+   Ics:     ~-185.696nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.84 [C]
+M: TTN Chamber Temp
+   Tmp:      31.02 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       421
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1183
+   Ics:     ~-211.090nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.87 [C]
+M: TTN Chamber Temp
+   Tmp:      31.00 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       421
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1312
+   Ics:     ~-179.591nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.84 [C]
+M: TTN Chamber Temp
+   Tmp:      31.02 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       421
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1172
+   Ics:     ~-213.776nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.87 [C]
+M: TTN Chamber Temp
+   Tmp:      31.02 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       420
+M: TTN Temp
+   Vs:       369
+M: ADC
+   Val:      1214
+   Ics:     ~-203.521nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      32.87 [C]
+M: TTN Chamber Temp
+   Tmp:      31.02 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       419
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1464
+   Ics:     ~-142.477nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.86 [C]
+M: TTN Chamber Temp
+   Tmp:      31.06 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       419
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1373
+   Ics:     ~-164.697nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.87 [C]
+M: TTN Chamber Temp
+   Tmp:      31.04 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       418
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1810
+   Ics:     ~-57.992nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.89 [C]
+M: TTN Chamber Temp
+   Tmp:      31.04 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       418
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1458
+   Ics:     ~-143.942nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.89 [C]
+M: TTN Chamber Temp
+   Tmp:      31.07 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       418
+M: TTN Temp
+   Vs:       369
+M: ADC
+   Val:      1220
+   Ics:     ~-202.055nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      32.90 [C]
+M: TTN Chamber Temp
+   Tmp:      31.07 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       417
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1569
+   Ics:     ~-116.838nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.91 [C]
+M: TTN Chamber Temp
+   Tmp:      31.07 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       417
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1274
+   Ics:     ~-188.870nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      32.90 [C]
+M: TTN Chamber Temp
+   Tmp:      31.10 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       416
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1467
+   Ics:     ~-141.744nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      32.91 [C]
+M: TTN Chamber Temp
+   Tmp:      31.09 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       416
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1722
+   Ics:     ~-79.479nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      32.91 [C]
+M: TTN Chamber Temp
+   Tmp:      31.10 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       416
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1291
+   Ics:     ~-184.719nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      32.91 [C]
+M: TTN Chamber Temp
+   Tmp:      31.12 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       415
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1217
+   Ics:     ~-202.788nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      32.90 [C]
+M: TTN Chamber Temp
+   Tmp:      31.12 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       415
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1327
+   Ics:     ~-175.929nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      32.91 [C]
+M: TTN Chamber Temp
+   Tmp:      31.12 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       415
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1393
+   Ics:     ~-159.813nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      32.93 [C]
+M: TTN Chamber Temp
+   Tmp:      31.13 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       414
+M: TTN Temp
+   Vs:       367
+M: ADC
+   Val:      1501
+   Ics:     ~-133.442nA
+M: TIM2 PWM Out
+   DutyCyc:  % 25
+M: TTN Ambient Temp
+   Tmp:      32.91 [C]
+M: TTN Chamber Temp
+   Tmp:      31.13 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       414
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1288
+   Ics:     ~-185.452nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      32.91 [C]
+M: TTN Chamber Temp
+   Tmp:      31.17 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       414
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1233
+   Ics:     ~-198.881nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.96 [C]
+M: TTN Chamber Temp
+   Tmp:      31.17 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       414
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1395
+   Ics:     ~-159.325nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.93 [C]
+M: TTN Chamber Temp
+   Tmp:      31.19 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       413
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1111
+   Ics:     ~-228.671nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.93 [C]
+M: TTN Chamber Temp
+   Tmp:      31.19 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       413
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1500
+   Ics:     ~-133.686nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.94 [C]
+M: TTN Chamber Temp
+   Tmp:      31.21 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       413
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1003
+   Ics:     ~-255.042nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.94 [C]
+M: TTN Chamber Temp
+   Tmp:      31.20 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       413
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1068
+   Ics:     ~-239.170nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.96 [C]
+M: TTN Chamber Temp
+   Tmp:      31.21 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       413
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1198
+   Ics:     ~-207.427nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.94 [C]
+M: TTN Chamber Temp
+   Tmp:      31.20 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       412
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1133
+   Ics:     ~-223.299nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.96 [C]
+M: TTN Chamber Temp
+   Tmp:      31.23 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       412
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1381
+   Ics:     ~-162.743nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.97 [C]
+M: TTN Chamber Temp
+   Tmp:      31.24 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       412
+M: TTN Temp
+   Vs:       369
+M: ADC
+   Val:      1763
+   Ics:     ~-69.468nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      32.96 [C]
+M: TTN Chamber Temp
+   Tmp:      31.26 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       410
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1144
+   Ics:     ~-220.613nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      32.97 [C]
+M: TTN Chamber Temp
+   Tmp:      31.27 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       410
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1108
+   Ics:     ~-229.403nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      32.99 [C]
+M: TTN Chamber Temp
+   Tmp:      31.27 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       410
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1286
+   Ics:     ~-185.940nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      32.99 [C]
+M: TTN Chamber Temp
+   Tmp:      31.27 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       409
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1593
+   Ics:     ~-110.978nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      32.99 [C]
+M: TTN Chamber Temp
+   Tmp:      31.27 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       409
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1332
+   Ics:     ~-174.708nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.00 [C]
+M: TTN Chamber Temp
+   Tmp:      31.31 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       409
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1169
+   Ics:     ~-214.508nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.00 [C]
+M: TTN Chamber Temp
+   Tmp:      31.30 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       408
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1229
+   Ics:     ~-199.858nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.00 [C]
+M: TTN Chamber Temp
+   Tmp:      31.30 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       408
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1190
+   Ics:     ~-209.381nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      32.99 [C]
+M: TTN Chamber Temp
+   Tmp:      31.31 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       408
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1486
+   Ics:     ~-137.105nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.03 [C]
+M: TTN Chamber Temp
+   Tmp:      31.31 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       408
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1164
+   Ics:     ~-215.729nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.01 [C]
+M: TTN Chamber Temp
+   Tmp:      31.30 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       407
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1299
+   Ics:     ~-182.766nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.01 [C]
+M: TTN Chamber Temp
+   Tmp:      31.33 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       407
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1279
+   Ics:     ~-187.649nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.00 [C]
+M: TTN Chamber Temp
+   Tmp:      31.36 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       407
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1331
+   Ics:     ~-174.952nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.03 [C]
+M: TTN Chamber Temp
+   Tmp:      31.34 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       406
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1216
+   Ics:     ~-203.032nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.04 [C]
+M: TTN Chamber Temp
+   Tmp:      31.36 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       406
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1841
+   Ics:     ~-50.422nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.03 [C]
+M: TTN Chamber Temp
+   Tmp:      31.36 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       406
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1153
+   Ics:     ~-218.415nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.04 [C]
+M: TTN Chamber Temp
+   Tmp:      31.37 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       405
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1222
+   Ics:     ~-201.567nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.06 [C]
+M: TTN Chamber Temp
+   Tmp:      31.37 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       405
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1334
+   Ics:     ~-174.219nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.06 [C]
+M: TTN Chamber Temp
+   Tmp:      31.37 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       405
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1500
+   Ics:     ~-133.686nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.06 [C]
+M: TTN Chamber Temp
+   Tmp:      31.38 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       404
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1398
+   Ics:     ~-158.592nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.06 [C]
+M: TTN Chamber Temp
+   Tmp:      31.40 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       404
+M: TTN Temp
+   Vs:       367
+M: ADC
+   Val:      1444
+   Ics:     ~-147.360nA
+M: TIM2 PWM Out
+   DutyCyc:  % 25
+M: TTN Ambient Temp
+   Tmp:      33.06 [C]
+M: TTN Chamber Temp
+   Tmp:      31.40 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       404
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1073
+   Ics:     ~-237.949nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.09 [C]
+M: TTN Chamber Temp
+   Tmp:      31.41 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       404
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1309
+   Ics:     ~-180.324nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      33.04 [C]
+M: TTN Chamber Temp
+   Tmp:      31.42 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       404
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1265
+   Ics:     ~-191.068nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      33.06 [C]
+M: TTN Chamber Temp
+   Tmp:      31.41 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       404
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1628
+   Ics:     ~-102.432nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      33.04 [C]
+M: TTN Chamber Temp
+   Tmp:      31.45 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       404
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1483
+   Ics:     ~-137.837nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      33.06 [C]
+M: TTN Chamber Temp
+   Tmp:      31.47 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       404
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1150
+   Ics:     ~-219.148nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      33.06 [C]
+M: TTN Chamber Temp
+   Tmp:      31.47 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       403
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1375
+   Ics:     ~-164.208nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      33.06 [C]
+M: TTN Chamber Temp
+   Tmp:      31.45 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       403
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1364
+   Ics:     ~-166.894nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      33.09 [C]
+M: TTN Chamber Temp
+   Tmp:      31.45 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       403
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1339
+   Ics:     ~-172.999nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      33.10 [C]
+M: TTN Chamber Temp
+   Tmp:      31.47 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       403
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1220
+   Ics:     ~-202.055nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      33.09 [C]
+M: TTN Chamber Temp
+   Tmp:      31.48 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       403
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1284
+   Ics:     ~-186.428nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      33.10 [C]
+M: TTN Chamber Temp
+   Tmp:      31.47 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       402
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1124
+   Ics:     ~-225.496nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      33.10 [C]
+M: TTN Chamber Temp
+   Tmp:      31.47 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       402
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1902
+   Ics:     ~-35.528nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      33.09 [C]
+M: TTN Chamber Temp
+   Tmp:      31.48 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       402
+M: TTN Temp
+   Vs:       369
+M: ADC
+   Val:      1440
+   Ics:     ~-148.337nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.11 [C]
+M: TTN Chamber Temp
+   Tmp:      31.49 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       401
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1170
+   Ics:     ~-214.264nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      33.10 [C]
+M: TTN Chamber Temp
+   Tmp:      31.52 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       400
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1098
+   Ics:     ~-231.845nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.13 [C]
+M: TTN Chamber Temp
+   Tmp:      31.52 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       400
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1804
+   Ics:     ~-59.457nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.11 [C]
+M: TTN Chamber Temp
+   Tmp:      31.54 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       400
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1413
+   Ics:     ~-154.930nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.09 [C]
+M: TTN Chamber Temp
+   Tmp:      31.55 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       400
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1279
+   Ics:     ~-187.649nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.11 [C]
+M: TTN Chamber Temp
+   Tmp:      31.54 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       399
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1448
+   Ics:     ~-146.383nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.14 [C]
+M: TTN Chamber Temp
+   Tmp:      31.57 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       399
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1215
+   Ics:     ~-203.276nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.13 [C]
+M: TTN Chamber Temp
+   Tmp:      31.55 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       399
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1513
+   Ics:     ~-130.512nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.13 [C]
+M: TTN Chamber Temp
+   Tmp:      31.57 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       398
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1453
+   Ics:     ~-145.163nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.11 [C]
+M: TTN Chamber Temp
+   Tmp:      31.55 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       398
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1283
+   Ics:     ~-186.672nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.13 [C]
+M: TTN Chamber Temp
+   Tmp:      31.58 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       398
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1167
+   Ics:     ~-214.997nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.14 [C]
+M: TTN Chamber Temp
+   Tmp:      31.60 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       397
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1102
+   Ics:     ~-230.868nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.16 [C]
+M: TTN Chamber Temp
+   Tmp:      31.60 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       397
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1290
+   Ics:     ~-184.963nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.16 [C]
+M: TTN Chamber Temp
+   Tmp:      31.60 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       397
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1451
+   Ics:     ~-145.651nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.14 [C]
+M: TTN Chamber Temp
+   Tmp:      31.61 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       397
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1549
+   Ics:     ~-121.722nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.16 [C]
+M: TTN Chamber Temp
+   Tmp:      31.60 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       396
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1615
+   Ics:     ~-105.606nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.14 [C]
+M: TTN Chamber Temp
+   Tmp:      31.61 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       396
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1312
+   Ics:     ~-179.591nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.16 [C]
+M: TTN Chamber Temp
+   Tmp:      31.61 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       396
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1437
+   Ics:     ~-149.069nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.17 [C]
+M: TTN Chamber Temp
+   Tmp:      31.62 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       396
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1203
+   Ics:     ~-206.206nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.16 [C]
+M: TTN Chamber Temp
+   Tmp:      31.64 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       395
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1118
+   Ics:     ~-226.961nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.16 [C]
+M: TTN Chamber Temp
+   Tmp:      31.67 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       395
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1086
+   Ics:     ~-234.775nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.17 [C]
+M: TTN Chamber Temp
+   Tmp:      31.65 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       395
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1444
+   Ics:     ~-147.360nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.20 [C]
+M: TTN Chamber Temp
+   Tmp:      31.65 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       395
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1187
+   Ics:     ~-210.113nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.17 [C]
+M: TTN Chamber Temp
+   Tmp:      31.68 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       394
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1250
+   Ics:     ~-194.730nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.17 [C]
+M: TTN Chamber Temp
+   Tmp:      31.68 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       394
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1199
+   Ics:     ~-207.183nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.17 [C]
+M: TTN Chamber Temp
+   Tmp:      31.68 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       394
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1362
+   Ics:     ~-167.383nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.20 [C]
+M: TTN Chamber Temp
+   Tmp:      31.69 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       394
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1276
+   Ics:     ~-188.382nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.18 [C]
+M: TTN Chamber Temp
+   Tmp:      31.69 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       394
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1305
+   Ics:     ~-181.301nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.22 [C]
+M: TTN Chamber Temp
+   Tmp:      31.69 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       393
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1511
+   Ics:     ~-131.000nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.20 [C]
+M: TTN Chamber Temp
+   Tmp:      31.69 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       393
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1208
+   Ics:     ~-204.986nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.21 [C]
+M: TTN Chamber Temp
+   Tmp:      31.69 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       393
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1373
+   Ics:     ~-164.697nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.22 [C]
+M: TTN Chamber Temp
+   Tmp:      31.72 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       393
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1343
+   Ics:     ~-172.022nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.21 [C]
+M: TTN Chamber Temp
+   Tmp:      31.73 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       392
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1365
+   Ics:     ~-166.650nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.22 [C]
+M: TTN Chamber Temp
+   Tmp:      31.72 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       392
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1537
+   Ics:     ~-124.652nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.24 [C]
+M: TTN Chamber Temp
+   Tmp:      31.72 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       392
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1088
+   Ics:     ~-234.287nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.21 [C]
+M: TTN Chamber Temp
+   Tmp:      31.72 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       391
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1174
+   Ics:     ~-213.288nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.24 [C]
+M: TTN Chamber Temp
+   Tmp:      31.76 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       391
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      2155
+   Ics:     ~26.249nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.22 [C]
+M: TTN Chamber Temp
+   Tmp:      31.76 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       391
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1315
+   Ics:     ~-178.859nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.22 [C]
+M: TTN Chamber Temp
+   Tmp:      31.75 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       391
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1267
+   Ics:     ~-190.579nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.22 [C]
+M: TTN Chamber Temp
+   Tmp:      31.76 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       391
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1294
+   Ics:     ~-183.986nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.22 [C]
+M: TTN Chamber Temp
+   Tmp:      31.76 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       391
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1178
+   Ics:     ~-212.311nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.24 [C]
+M: TTN Chamber Temp
+   Tmp:      31.78 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       390
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1312
+   Ics:     ~-179.591nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.24 [C]
+M: TTN Chamber Temp
+   Tmp:      31.78 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       390
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1452
+   Ics:     ~-145.407nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.22 [C]
+M: TTN Chamber Temp
+   Tmp:      31.76 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       390
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1686
+   Ics:     ~-88.270nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.24 [C]
+M: TTN Chamber Temp
+   Tmp:      31.79 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       390
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1243
+   Ics:     ~-196.439nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.24 [C]
+M: TTN Chamber Temp
+   Tmp:      31.78 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       390
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1318
+   Ics:     ~-178.126nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.24 [C]
+M: TTN Chamber Temp
+   Tmp:      31.79 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       390
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1296
+   Ics:     ~-183.498nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.25 [C]
+M: TTN Chamber Temp
+   Tmp:      31.82 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       389
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1580
+   Ics:     ~-114.152nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.27 [C]
+M: TTN Chamber Temp
+   Tmp:      31.82 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       389
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1583
+   Ics:     ~-113.420nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.27 [C]
+M: TTN Chamber Temp
+   Tmp:      31.81 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       389
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1210
+   Ics:     ~-204.497nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.25 [C]
+M: TTN Chamber Temp
+   Tmp:      31.83 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       389
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1127
+   Ics:     ~-224.764nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.27 [C]
+M: TTN Chamber Temp
+   Tmp:      31.83 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       388
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1175
+   Ics:     ~-213.043nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.28 [C]
+M: TTN Chamber Temp
+   Tmp:      31.82 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       388
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1513
+   Ics:     ~-130.512nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.28 [C]
+M: TTN Chamber Temp
+   Tmp:      31.85 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       388
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1395
+   Ics:     ~-159.325nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.28 [C]
+M: TTN Chamber Temp
+   Tmp:      31.88 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       388
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1043
+   Ics:     ~-245.275nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.28 [C]
+M: TTN Chamber Temp
+   Tmp:      31.83 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       388
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1376
+   Ics:     ~-163.964nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.29 [C]
+M: TTN Chamber Temp
+   Tmp:      31.86 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       387
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1184
+   Ics:     ~-210.846nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.27 [C]
+M: TTN Chamber Temp
+   Tmp:      31.86 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       387
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1327
+   Ics:     ~-175.929nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.28 [C]
+M: TTN Chamber Temp
+   Tmp:      31.88 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       387
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1698
+   Ics:     ~-85.339nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.29 [C]
+M: TTN Chamber Temp
+   Tmp:      31.88 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       387
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1603
+   Ics:     ~-108.536nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.28 [C]
+M: TTN Chamber Temp
+   Tmp:      31.89 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       387
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1161
+   Ics:     ~-216.462nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.28 [C]
+M: TTN Chamber Temp
+   Tmp:      31.86 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       386
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1245
+   Ics:     ~-195.951nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.34 [C]
+M: TTN Chamber Temp
+   Tmp:      31.89 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       386
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1803
+   Ics:     ~-59.701nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.31 [C]
+M: TTN Chamber Temp
+   Tmp:      31.89 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       386
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1585
+   Ics:     ~-112.931nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.32 [C]
+M: TTN Chamber Temp
+   Tmp:      31.90 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       386
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1350
+   Ics:     ~-170.313nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.31 [C]
+M: TTN Chamber Temp
+   Tmp:      31.92 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       386
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1105
+   Ics:     ~-230.136nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.31 [C]
+M: TTN Chamber Temp
+   Tmp:      31.90 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       385
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1352
+   Ics:     ~-169.824nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.32 [C]
+M: TTN Chamber Temp
+   Tmp:      31.95 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       385
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1248
+   Ics:     ~-195.219nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.35 [C]
+M: TTN Chamber Temp
+   Tmp:      31.95 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       385
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1378
+   Ics:     ~-163.476nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.32 [C]
+M: TTN Chamber Temp
+   Tmp:      31.92 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       385
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1293
+   Ics:     ~-184.231nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.34 [C]
+M: TTN Chamber Temp
+   Tmp:      31.95 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       385
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1330
+   Ics:     ~-175.196nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.32 [C]
+M: TTN Chamber Temp
+   Tmp:      31.95 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       385
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1085
+   Ics:     ~-235.019nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.32 [C]
+M: TTN Chamber Temp
+   Tmp:      31.93 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       384
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1249
+   Ics:     ~-194.974nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.34 [C]
+M: TTN Chamber Temp
+   Tmp:      31.93 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       384
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1447
+   Ics:     ~-146.628nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.35 [C]
+M: TTN Chamber Temp
+   Tmp:      31.95 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       384
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1345
+   Ics:     ~-171.534nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.35 [C]
+M: TTN Chamber Temp
+   Tmp:      31.97 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       384
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1407
+   Ics:     ~-156.395nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.35 [C]
+M: TTN Chamber Temp
+   Tmp:      31.96 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       384
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1322
+   Ics:     ~-177.150nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.38 [C]
+M: TTN Chamber Temp
+   Tmp:      31.97 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       383
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1251
+   Ics:     ~-194.486nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.34 [C]
+M: TTN Chamber Temp
+   Tmp:      31.97 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       383
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1556
+   Ics:     ~-120.012nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.37 [C]
+M: TTN Chamber Temp
+   Tmp:      31.97 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       383
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1445
+   Ics:     ~-147.116nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.37 [C]
+M: TTN Chamber Temp
+   Tmp:      31.99 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       383
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1432
+   Ics:     ~-150.290nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.37 [C]
+M: TTN Chamber Temp
+   Tmp:      31.97 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       383
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1124
+   Ics:     ~-225.496nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.35 [C]
+M: TTN Chamber Temp
+   Tmp:      32.02 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       383
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1297
+   Ics:     ~-183.254nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.37 [C]
+M: TTN Chamber Temp
+   Tmp:      32.00 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       383
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1897
+   Ics:     ~-36.748nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.37 [C]
+M: TTN Chamber Temp
+   Tmp:      32.00 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       382
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1430
+   Ics:     ~-150.779nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.35 [C]
+M: TTN Chamber Temp
+   Tmp:      32.02 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       382
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1393
+   Ics:     ~-159.813nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.37 [C]
+M: TTN Chamber Temp
+   Tmp:      32.03 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       382
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1163
+   Ics:     ~-215.974nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.40 [C]
+M: TTN Chamber Temp
+   Tmp:      32.05 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       382
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1361
+   Ics:     ~-167.627nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.40 [C]
+M: TTN Chamber Temp
+   Tmp:      32.05 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       382
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1464
+   Ics:     ~-142.477nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.38 [C]
+M: TTN Chamber Temp
+   Tmp:      32.02 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       382
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1277
+   Ics:     ~-188.137nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.38 [C]
+M: TTN Chamber Temp
+   Tmp:      32.05 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       381
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1422
+   Ics:     ~-152.732nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.37 [C]
+M: TTN Chamber Temp
+   Tmp:      32.03 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       381
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1350
+   Ics:     ~-170.313nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.38 [C]
+M: TTN Chamber Temp
+   Tmp:      32.03 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       381
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1347
+   Ics:     ~-171.045nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.40 [C]
+M: TTN Chamber Temp
+   Tmp:      32.05 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       381
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1788
+   Ics:     ~-63.364nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.40 [C]
+M: TTN Chamber Temp
+   Tmp:      32.05 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       381
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1230
+   Ics:     ~-199.614nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.41 [C]
+M: TTN Chamber Temp
+   Tmp:      32.06 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       381
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1378
+   Ics:     ~-163.476nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.40 [C]
+M: TTN Chamber Temp
+   Tmp:      32.06 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       381
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1366
+   Ics:     ~-166.406nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.40 [C]
+M: TTN Chamber Temp
+   Tmp:      32.09 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       380
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1195
+   Ics:     ~-208.160nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.41 [C]
+M: TTN Chamber Temp
+   Tmp:      32.06 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       380
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1350
+   Ics:     ~-170.313nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.41 [C]
+M: TTN Chamber Temp
+   Tmp:      32.07 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       380
+M: TTN Temp
+   Vs:       369
+M: ADC
+   Val:      1192
+   Ics:     ~-208.892nA
+M: TIM2 PWM Out
+   DutyCyc:  % 21
+M: TTN Ambient Temp
+   Tmp:      33.41 [C]
+M: TTN Chamber Temp
+   Tmp:      32.07 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       379
+M: TTN Temp
+   Vs:       367
+M: ADC
+   Val:      1365
+   Ics:     ~-166.650nA
+M: TIM2 PWM Out
+   DutyCyc:  % 25
+M: TTN Ambient Temp
+   Tmp:      33.42 [C]
+M: TTN Chamber Temp
+   Tmp:      32.07 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       379
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1344
+   Ics:     ~-171.778nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.41 [C]
+M: TTN Chamber Temp
+   Tmp:      32.07 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       379
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1240
+   Ics:     ~-197.172nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.41 [C]
+M: TTN Chamber Temp
+   Tmp:      32.10 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       379
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1483
+   Ics:     ~-137.837nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.44 [C]
+M: TTN Chamber Temp
+   Tmp:      32.12 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       379
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1404
+   Ics:     ~-157.127nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.44 [C]
+M: TTN Chamber Temp
+   Tmp:      32.12 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       379
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1190
+   Ics:     ~-209.381nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.41 [C]
+M: TTN Chamber Temp
+   Tmp:      32.13 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       379
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1428
+   Ics:     ~-151.267nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.42 [C]
+M: TTN Chamber Temp
+   Tmp:      32.12 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       379
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1307
+   Ics:     ~-180.812nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.44 [C]
+M: TTN Chamber Temp
+   Tmp:      32.14 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       379
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1756
+   Ics:     ~-71.177nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.45 [C]
+M: TTN Chamber Temp
+   Tmp:      32.14 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       379
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1488
+   Ics:     ~-136.616nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.44 [C]
+M: TTN Chamber Temp
+   Tmp:      32.13 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       378
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1360
+   Ics:     ~-167.871nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.45 [C]
+M: TTN Chamber Temp
+   Tmp:      32.14 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       378
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1489
+   Ics:     ~-136.372nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.45 [C]
+M: TTN Chamber Temp
+   Tmp:      32.17 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       378
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1306
+   Ics:     ~-181.056nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.46 [C]
+M: TTN Chamber Temp
+   Tmp:      32.13 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       378
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1741
+   Ics:     ~-74.840nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.45 [C]
+M: TTN Chamber Temp
+   Tmp:      32.14 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       378
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1270
+   Ics:     ~-189.847nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.45 [C]
+M: TTN Chamber Temp
+   Tmp:      32.17 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       378
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1148
+   Ics:     ~-219.636nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.45 [C]
+M: TTN Chamber Temp
+   Tmp:      32.19 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       378
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1605
+   Ics:     ~-108.048nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.45 [C]
+M: TTN Chamber Temp
+   Tmp:      32.20 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       378
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1344
+   Ics:     ~-171.778nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.46 [C]
+M: TTN Chamber Temp
+   Tmp:      32.17 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       377
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1500
+   Ics:     ~-133.686nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.48 [C]
+M: TTN Chamber Temp
+   Tmp:      32.17 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       377
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1311
+   Ics:     ~-179.835nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.48 [C]
+M: TTN Chamber Temp
+   Tmp:      32.17 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       377
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1353
+   Ics:     ~-169.580nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.49 [C]
+M: TTN Chamber Temp
+   Tmp:      32.20 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       377
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1389
+   Ics:     ~-160.790nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.49 [C]
+M: TTN Chamber Temp
+   Tmp:      32.20 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       377
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1368
+   Ics:     ~-165.917nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.48 [C]
+M: TTN Chamber Temp
+   Tmp:      32.20 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       377
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1606
+   Ics:     ~-107.804nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.48 [C]
+M: TTN Chamber Temp
+   Tmp:      32.20 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       377
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1298
+   Ics:     ~-183.010nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.48 [C]
+M: TTN Chamber Temp
+   Tmp:      32.20 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       377
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1351
+   Ics:     ~-170.068nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.49 [C]
+M: TTN Chamber Temp
+   Tmp:      32.22 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       376
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1339
+   Ics:     ~-172.999nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.48 [C]
+M: TTN Chamber Temp
+   Tmp:      32.24 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       376
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1334
+   Ics:     ~-174.219nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.49 [C]
+M: TTN Chamber Temp
+   Tmp:      32.20 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       376
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1795
+   Ics:     ~-61.654nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.49 [C]
+M: TTN Chamber Temp
+   Tmp:      32.24 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       376
+M: TTN Temp
+   Vs:       369
+M: ADC
+   Val:      1370
+   Ics:     ~-165.429nA
+M: TIM2 PWM Out
+   DutyCyc:  % 21
+M: TTN Ambient Temp
+   Tmp:      33.49 [C]
+M: TTN Chamber Temp
+   Tmp:      32.23 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       375
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1166
+   Ics:     ~-215.241nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.51 [C]
+M: TTN Chamber Temp
+   Tmp:      32.24 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       375
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1205
+   Ics:     ~-205.718nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.49 [C]
+M: TTN Chamber Temp
+   Tmp:      32.22 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       375
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1191
+   Ics:     ~-209.137nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.52 [C]
+M: TTN Chamber Temp
+   Tmp:      32.24 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       375
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1938
+   Ics:     ~-26.737nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.51 [C]
+M: TTN Chamber Temp
+   Tmp:      32.24 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       375
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      2143
+   Ics:     ~23.319nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.52 [C]
+M: TTN Chamber Temp
+   Tmp:      32.26 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       375
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1295
+   Ics:     ~-183.742nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.52 [C]
+M: TTN Chamber Temp
+   Tmp:      32.24 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       375
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1375
+   Ics:     ~-164.208nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.51 [C]
+M: TTN Chamber Temp
+   Tmp:      32.26 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       375
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1353
+   Ics:     ~-169.580nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.54 [C]
+M: TTN Chamber Temp
+   Tmp:      32.26 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       375
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1329
+   Ics:     ~-175.440nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.51 [C]
+M: TTN Chamber Temp
+   Tmp:      32.28 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       374
+M: TTN Temp
+   Vs:       369
+M: ADC
+   Val:      1186
+   Ics:     ~-210.357nA
+M: TIM2 PWM Out
+   DutyCyc:  % 21
+M: TTN Ambient Temp
+   Tmp:      33.52 [C]
+M: TTN Chamber Temp
+   Tmp:      32.27 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       374
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1301
+   Ics:     ~-182.277nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.51 [C]
+M: TTN Chamber Temp
+   Tmp:      32.28 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       374
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1308
+   Ics:     ~-180.568nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.51 [C]
+M: TTN Chamber Temp
+   Tmp:      32.28 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       373
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1477
+   Ics:     ~-139.302nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.52 [C]
+M: TTN Chamber Temp
+   Tmp:      32.31 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       373
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1279
+   Ics:     ~-187.649nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.52 [C]
+M: TTN Chamber Temp
+   Tmp:      32.30 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       373
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1829
+   Ics:     ~-53.352nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.52 [C]
+M: TTN Chamber Temp
+   Tmp:      32.28 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       373
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1390
+   Ics:     ~-160.546nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.55 [C]
+M: TTN Chamber Temp
+   Tmp:      32.31 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       373
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1310
+   Ics:     ~-180.080nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.55 [C]
+M: TTN Chamber Temp
+   Tmp:      32.31 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       373
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1107
+   Ics:     ~-229.647nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.55 [C]
+M: TTN Chamber Temp
+   Tmp:      32.30 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       373
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1406
+   Ics:     ~-156.639nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.54 [C]
+M: TTN Chamber Temp
+   Tmp:      32.31 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       372
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1404
+   Ics:     ~-157.127nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.56 [C]
+M: TTN Chamber Temp
+   Tmp:      32.30 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       372
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1336
+   Ics:     ~-173.731nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.55 [C]
+M: TTN Chamber Temp
+   Tmp:      32.34 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       372
+M: TTN Temp
+   Vs:       367
+M: ADC
+   Val:      1673
+   Ics:     ~-91.444nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      33.58 [C]
+M: TTN Chamber Temp
+   Tmp:      32.33 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       372
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1450
+   Ics:     ~-145.895nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.59 [C]
+M: TTN Chamber Temp
+   Tmp:      32.34 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       372
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1362
+   Ics:     ~-167.383nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.55 [C]
+M: TTN Chamber Temp
+   Tmp:      32.34 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       372
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1323
+   Ics:     ~-176.905nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.56 [C]
+M: TTN Chamber Temp
+   Tmp:      32.33 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       372
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1275
+   Ics:     ~-188.626nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.58 [C]
+M: TTN Chamber Temp
+   Tmp:      32.35 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       372
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1398
+   Ics:     ~-158.592nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.58 [C]
+M: TTN Chamber Temp
+   Tmp:      32.33 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       372
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1257
+   Ics:     ~-193.021nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.58 [C]
+M: TTN Chamber Temp
+   Tmp:      32.38 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       372
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1415
+   Ics:     ~-154.441nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.56 [C]
+M: TTN Chamber Temp
+   Tmp:      32.37 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       372
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1382
+   Ics:     ~-162.499nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.56 [C]
+M: TTN Chamber Temp
+   Tmp:      32.35 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       372
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1302
+   Ics:     ~-182.033nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.56 [C]
+M: TTN Chamber Temp
+   Tmp:      32.35 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       372
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1277
+   Ics:     ~-188.137nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.56 [C]
+M: TTN Chamber Temp
+   Tmp:      32.37 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       372
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1222
+   Ics:     ~-201.567nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.58 [C]
+M: TTN Chamber Temp
+   Tmp:      32.38 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       372
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1466
+   Ics:     ~-141.988nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.58 [C]
+M: TTN Chamber Temp
+   Tmp:      32.38 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       372
+M: TTN Temp
+   Vs:       369
+M: ADC
+   Val:      1313
+   Ics:     ~-179.347nA
+M: TIM2 PWM Out
+   DutyCyc:  % 21
+M: TTN Ambient Temp
+   Tmp:      33.62 [C]
+M: TTN Chamber Temp
+   Tmp:      32.37 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       371
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1358
+   Ics:     ~-168.359nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.59 [C]
+M: TTN Chamber Temp
+   Tmp:      32.40 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       371
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1252
+   Ics:     ~-194.242nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.59 [C]
+M: TTN Chamber Temp
+   Tmp:      32.38 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       371
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1174
+   Ics:     ~-213.288nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.59 [C]
+M: TTN Chamber Temp
+   Tmp:      32.40 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       371
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1520
+   Ics:     ~-128.803nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.59 [C]
+M: TTN Chamber Temp
+   Tmp:      32.37 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       370
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1399
+   Ics:     ~-158.348nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.58 [C]
+M: TTN Chamber Temp
+   Tmp:      32.38 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       370
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1833
+   Ics:     ~-52.376nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.61 [C]
+M: TTN Chamber Temp
+   Tmp:      32.37 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       370
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1440
+   Ics:     ~-148.337nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.59 [C]
+M: TTN Chamber Temp
+   Tmp:      32.41 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       370
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1240
+   Ics:     ~-197.172nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.61 [C]
+M: TTN Chamber Temp
+   Tmp:      32.41 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       370
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1309
+   Ics:     ~-180.324nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.62 [C]
+M: TTN Chamber Temp
+   Tmp:      32.42 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       370
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1321
+   Ics:     ~-177.394nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.62 [C]
+M: TTN Chamber Temp
+   Tmp:      32.42 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       370
+M: TTN Temp
+   Vs:       367
+M: ADC
+   Val:      1305
+   Ics:     ~-181.301nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      33.62 [C]
+M: TTN Chamber Temp
+   Tmp:      32.42 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       370
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1321
+   Ics:     ~-177.394nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.62 [C]
+M: TTN Chamber Temp
+   Tmp:      32.41 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       370
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1365
+   Ics:     ~-166.650nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.62 [C]
+M: TTN Chamber Temp
+   Tmp:      32.41 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       370
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1529
+   Ics:     ~-126.605nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.62 [C]
+M: TTN Chamber Temp
+   Tmp:      32.42 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       370
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1059
+   Ics:     ~-241.368nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.63 [C]
+M: TTN Chamber Temp
+   Tmp:      32.44 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       370
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1256
+   Ics:     ~-193.265nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.63 [C]
+M: TTN Chamber Temp
+   Tmp:      32.42 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       370
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1412
+   Ics:     ~-155.174nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.65 [C]
+M: TTN Chamber Temp
+   Tmp:      32.44 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       370
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1365
+   Ics:     ~-166.650nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.63 [C]
+M: TTN Chamber Temp
+   Tmp:      32.42 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       370
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1593
+   Ics:     ~-110.978nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.66 [C]
+M: TTN Chamber Temp
+   Tmp:      32.45 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       370
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1072
+   Ics:     ~-238.194nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.63 [C]
+M: TTN Chamber Temp
+   Tmp:      32.45 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       370
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1124
+   Ics:     ~-225.496nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.63 [C]
+M: TTN Chamber Temp
+   Tmp:      32.44 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       370
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1125
+   Ics:     ~-225.252nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.63 [C]
+M: TTN Chamber Temp
+   Tmp:      32.47 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       369
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1099
+   Ics:     ~-231.601nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.66 [C]
+M: TTN Chamber Temp
+   Tmp:      32.45 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       369
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1631
+   Ics:     ~-101.699nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.65 [C]
+M: TTN Chamber Temp
+   Tmp:      32.45 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       369
+M: TTN Temp
+   Vs:       369
+M: ADC
+   Val:      1067
+   Ics:     ~-239.414nA
+M: TIM2 PWM Out
+   DutyCyc:  % 21
+M: TTN Ambient Temp
+   Tmp:      33.65 [C]
+M: TTN Chamber Temp
+   Tmp:      32.45 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       369
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1532
+   Ics:     ~-125.873nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.66 [C]
+M: TTN Chamber Temp
+   Tmp:      32.48 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       369
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1434
+   Ics:     ~-149.802nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.66 [C]
+M: TTN Chamber Temp
+   Tmp:      32.47 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       369
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1316
+   Ics:     ~-178.615nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.66 [C]
+M: TTN Chamber Temp
+   Tmp:      32.48 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       368
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1478
+   Ics:     ~-139.058nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.65 [C]
+M: TTN Chamber Temp
+   Tmp:      32.45 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       368
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1302
+   Ics:     ~-182.033nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.68 [C]
+M: TTN Chamber Temp
+   Tmp:      32.48 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       368
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1204
+   Ics:     ~-205.962nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.65 [C]
+M: TTN Chamber Temp
+   Tmp:      32.51 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       368
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1180
+   Ics:     ~-211.823nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.66 [C]
+M: TTN Chamber Temp
+   Tmp:      32.47 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       368
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1347
+   Ics:     ~-171.045nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.66 [C]
+M: TTN Chamber Temp
+   Tmp:      32.51 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       368
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1185
+   Ics:     ~-210.602nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.66 [C]
+M: TTN Chamber Temp
+   Tmp:      32.50 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       368
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1278
+   Ics:     ~-187.893nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.66 [C]
+M: TTN Chamber Temp
+   Tmp:      32.50 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       368
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1324
+   Ics:     ~-176.661nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.66 [C]
+M: TTN Chamber Temp
+   Tmp:      32.50 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       368
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1305
+   Ics:     ~-181.301nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.68 [C]
+M: TTN Chamber Temp
+   Tmp:      32.52 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       368
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1301
+   Ics:     ~-182.277nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.68 [C]
+M: TTN Chamber Temp
+   Tmp:      32.51 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       367
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1462
+   Ics:     ~-142.965nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.68 [C]
+M: TTN Chamber Temp
+   Tmp:      32.50 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       367
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1286
+   Ics:     ~-185.940nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.72 [C]
+M: TTN Chamber Temp
+   Tmp:      32.52 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       367
+M: TTN Temp
+   Vs:       367
+M: ADC
+   Val:      1111
+   Ics:     ~-228.671nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      33.69 [C]
+M: TTN Chamber Temp
+   Tmp:      32.52 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       367
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1229
+   Ics:     ~-199.858nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.71 [C]
+M: TTN Chamber Temp
+   Tmp:      32.54 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       367
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1324
+   Ics:     ~-176.661nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.68 [C]
+M: TTN Chamber Temp
+   Tmp:      32.54 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       367
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1442
+   Ics:     ~-147.848nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.69 [C]
+M: TTN Chamber Temp
+   Tmp:      32.52 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       367
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1639
+   Ics:     ~-99.746nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.69 [C]
+M: TTN Chamber Temp
+   Tmp:      32.54 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       367
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1153
+   Ics:     ~-218.415nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.71 [C]
+M: TTN Chamber Temp
+   Tmp:      32.52 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       367
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1276
+   Ics:     ~-188.382nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.69 [C]
+M: TTN Chamber Temp
+   Tmp:      32.52 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       367
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1341
+   Ics:     ~-172.510nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.72 [C]
+M: TTN Chamber Temp
+   Tmp:      32.55 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       367
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1493
+   Ics:     ~-135.396nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.69 [C]
+M: TTN Chamber Temp
+   Tmp:      32.55 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       367
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1327
+   Ics:     ~-175.929nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.69 [C]
+M: TTN Chamber Temp
+   Tmp:      32.54 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       367
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1345
+   Ics:     ~-171.534nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.73 [C]
+M: TTN Chamber Temp
+   Tmp:      32.57 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       367
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1323
+   Ics:     ~-176.905nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.72 [C]
+M: TTN Chamber Temp
+   Tmp:      32.55 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       367
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1320
+   Ics:     ~-177.638nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.71 [C]
+M: TTN Chamber Temp
+   Tmp:      32.57 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       367
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1368
+   Ics:     ~-165.917nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.71 [C]
+M: TTN Chamber Temp
+   Tmp:      32.59 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       367
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1260
+   Ics:     ~-192.288nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.72 [C]
+M: TTN Chamber Temp
+   Tmp:      32.57 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       367
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1136
+   Ics:     ~-222.566nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.73 [C]
+M: TTN Chamber Temp
+   Tmp:      32.58 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       367
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1409
+   Ics:     ~-155.906nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.72 [C]
+M: TTN Chamber Temp
+   Tmp:      32.58 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       367
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1486
+   Ics:     ~-137.105nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.76 [C]
+M: TTN Chamber Temp
+   Tmp:      32.59 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       367
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1499
+   Ics:     ~-133.930nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.72 [C]
+M: TTN Chamber Temp
+   Tmp:      32.59 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       367
+M: TTN Temp
+   Vs:       369
+M: ADC
+   Val:      1573
+   Ics:     ~-115.861nA
+M: TIM2 PWM Out
+   DutyCyc:  % 21
+M: TTN Ambient Temp
+   Tmp:      33.72 [C]
+M: TTN Chamber Temp
+   Tmp:      32.59 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       366
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1225
+   Ics:     ~-200.835nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.75 [C]
+M: TTN Chamber Temp
+   Tmp:      32.59 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       366
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1403
+   Ics:     ~-157.371nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.75 [C]
+M: TTN Chamber Temp
+   Tmp:      32.59 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       366
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1105
+   Ics:     ~-230.136nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.73 [C]
+M: TTN Chamber Temp
+   Tmp:      32.59 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       366
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1367
+   Ics:     ~-166.162nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.73 [C]
+M: TTN Chamber Temp
+   Tmp:      32.61 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       366
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1215
+   Ics:     ~-203.276nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.75 [C]
+M: TTN Chamber Temp
+   Tmp:      32.59 [C]
+M: TTN Readout Vs
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       365
+M: TTN Temp
+   Vs:       369
+M: ADC
+   Val:      1225
+   Ics:     ~-200.835nA
+M: TIM2 PWM Out
+   DutyCyc:  % 20
+M: TTN Ambient Temp
+   Tmp:      33.73 [C]
+M: TTN Chamber Temp
+   Tmp:      32.64 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       365
+M: TTN Temp
+   Vs:       367
+M: ADC
+   Val:      1346
+   Ics:     ~-171.289nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      33.75 [C]
+M: TTN Chamber Temp
+   Tmp:      32.64 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       365
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1371
+   Ics:     ~-165.185nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.75 [C]
+M: TTN Chamber Temp
+   Tmp:      32.61 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       365
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1400
+   Ics:     ~-158.104nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.75 [C]
+M: TTN Chamber Temp
+   Tmp:      32.64 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       365
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1494
+   Ics:     ~-135.151nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.76 [C]
+M: TTN Chamber Temp
+   Tmp:      32.64 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       365
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1204
+   Ics:     ~-205.962nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.76 [C]
+M: TTN Chamber Temp
+   Tmp:      32.65 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       365
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1260
+   Ics:     ~-192.288nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.75 [C]
+M: TTN Chamber Temp
+   Tmp:      32.64 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       364
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1398
+   Ics:     ~-158.592nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.73 [C]
+M: TTN Chamber Temp
+   Tmp:      32.64 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       364
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1476
+   Ics:     ~-139.546nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.76 [C]
+M: TTN Chamber Temp
+   Tmp:      32.65 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       364
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1275
+   Ics:     ~-188.626nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.76 [C]
+M: TTN Chamber Temp
+   Tmp:      32.65 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       364
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1454
+   Ics:     ~-144.918nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.76 [C]
+M: TTN Chamber Temp
+   Tmp:      32.66 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       364
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1634
+   Ics:     ~-100.967nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.77 [C]
+M: TTN Chamber Temp
+   Tmp:      32.65 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       364
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1157
+   Ics:     ~-217.439nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.76 [C]
+M: TTN Chamber Temp
+   Tmp:      32.64 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       364
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1278
+   Ics:     ~-187.893nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.76 [C]
+M: TTN Chamber Temp
+   Tmp:      32.68 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       364
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1406
+   Ics:     ~-156.639nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.79 [C]
+M: TTN Chamber Temp
+   Tmp:      32.66 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       364
+M: TTN Temp
+   Vs:       367
+M: ADC
+   Val:      1393
+   Ics:     ~-159.813nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      33.77 [C]
+M: TTN Chamber Temp
+   Tmp:      32.68 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       364
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1327
+   Ics:     ~-175.929nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.80 [C]
+M: TTN Chamber Temp
+   Tmp:      32.68 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       364
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1115
+   Ics:     ~-227.694nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.80 [C]
+M: TTN Chamber Temp
+   Tmp:      32.66 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       364
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1145
+   Ics:     ~-220.369nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.77 [C]
+M: TTN Chamber Temp
+   Tmp:      32.69 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       364
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1315
+   Ics:     ~-178.859nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.80 [C]
+M: TTN Chamber Temp
+   Tmp:      32.68 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       364
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1470
+   Ics:     ~-141.012nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.80 [C]
+M: TTN Chamber Temp
+   Tmp:      32.69 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       364
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1524
+   Ics:     ~-127.826nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.80 [C]
+M: TTN Chamber Temp
+   Tmp:      32.69 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       364
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1345
+   Ics:     ~-171.534nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.80 [C]
+M: TTN Chamber Temp
+   Tmp:      32.68 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       364
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1247
+   Ics:     ~-195.463nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.79 [C]
+M: TTN Chamber Temp
+   Tmp:      32.68 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       364
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1345
+   Ics:     ~-171.534nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.82 [C]
+M: TTN Chamber Temp
+   Tmp:      32.72 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       364
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1450
+   Ics:     ~-145.895nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.82 [C]
+M: TTN Chamber Temp
+   Tmp:      32.71 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       364
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1390
+   Ics:     ~-160.546nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.82 [C]
+M: TTN Chamber Temp
+   Tmp:      32.68 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       364
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1258
+   Ics:     ~-192.777nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.82 [C]
+M: TTN Chamber Temp
+   Tmp:      32.69 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       364
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1238
+   Ics:     ~-197.660nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.82 [C]
+M: TTN Chamber Temp
+   Tmp:      32.71 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       364
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1363
+   Ics:     ~-167.138nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.83 [C]
+M: TTN Chamber Temp
+   Tmp:      32.71 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       364
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1366
+   Ics:     ~-166.406nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.82 [C]
+M: TTN Chamber Temp
+   Tmp:      32.66 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       364
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1352
+   Ics:     ~-169.824nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.82 [C]
+M: TTN Chamber Temp
+   Tmp:      32.72 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       364
+M: TTN Temp
+   Vs:       369
+M: ADC
+   Val:      1255
+   Ics:     ~-193.509nA
+M: TIM2 PWM Out
+   DutyCyc:  % 21
+M: TTN Ambient Temp
+   Tmp:      33.83 [C]
+M: TTN Chamber Temp
+   Tmp:      32.71 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       363
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1321
+   Ics:     ~-177.394nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.83 [C]
+M: TTN Chamber Temp
+   Tmp:      32.74 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       363
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1404
+   Ics:     ~-157.127nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.83 [C]
+M: TTN Chamber Temp
+   Tmp:      32.74 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       363
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1312
+   Ics:     ~-179.591nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.84 [C]
+M: TTN Chamber Temp
+   Tmp:      32.72 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       363
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1609
+   Ics:     ~-107.071nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.82 [C]
+M: TTN Chamber Temp
+   Tmp:      32.71 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       363
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1364
+   Ics:     ~-166.894nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.82 [C]
+M: TTN Chamber Temp
+   Tmp:      32.74 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       363
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1136
+   Ics:     ~-222.566nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.83 [C]
+M: TTN Chamber Temp
+   Tmp:      32.75 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       363
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1141
+   Ics:     ~-221.345nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.84 [C]
+M: TTN Chamber Temp
+   Tmp:      32.72 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       363
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1219
+   Ics:     ~-202.300nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.84 [C]
+M: TTN Chamber Temp
+   Tmp:      32.75 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       363
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1581
+   Ics:     ~-113.908nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.84 [C]
+M: TTN Chamber Temp
+   Tmp:      32.75 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       363
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1185
+   Ics:     ~-210.602nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.86 [C]
+M: TTN Chamber Temp
+   Tmp:      32.76 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       363
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1426
+   Ics:     ~-151.755nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.86 [C]
+M: TTN Chamber Temp
+   Tmp:      32.75 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       363
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1370
+   Ics:     ~-165.429nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.84 [C]
+M: TTN Chamber Temp
+   Tmp:      32.79 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       362
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1222
+   Ics:     ~-201.567nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.88 [C]
+M: TTN Chamber Temp
+   Tmp:      32.75 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       362
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1878
+   Ics:     ~-41.388nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.89 [C]
+M: TTN Chamber Temp
+   Tmp:      32.78 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       362
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1255
+   Ics:     ~-193.509nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.89 [C]
+M: TTN Chamber Temp
+   Tmp:      32.76 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       362
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1397
+   Ics:     ~-158.836nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.86 [C]
+M: TTN Chamber Temp
+   Tmp:      32.79 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       362
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1353
+   Ics:     ~-169.580nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.88 [C]
+M: TTN Chamber Temp
+   Tmp:      32.76 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       362
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1265
+   Ics:     ~-191.068nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.88 [C]
+M: TTN Chamber Temp
+   Tmp:      32.78 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       362
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1677
+   Ics:     ~-90.467nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.86 [C]
+M: TTN Chamber Temp
+   Tmp:      32.78 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       362
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1413
+   Ics:     ~-154.930nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.88 [C]
+M: TTN Chamber Temp
+   Tmp:      32.79 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       362
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1394
+   Ics:     ~-159.569nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.88 [C]
+M: TTN Chamber Temp
+   Tmp:      32.79 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       362
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1401
+   Ics:     ~-157.860nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.90 [C]
+M: TTN Chamber Temp
+   Tmp:      32.81 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       362
+M: TTN Temp
+   Vs:       367
+M: ADC
+   Val:      1477
+   Ics:     ~-139.302nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      33.89 [C]
+M: TTN Chamber Temp
+   Tmp:      32.82 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       362
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1912
+   Ics:     ~-33.086nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.89 [C]
+M: TTN Chamber Temp
+   Tmp:      32.78 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       362
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1375
+   Ics:     ~-164.208nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.89 [C]
+M: TTN Chamber Temp
+   Tmp:      32.82 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       362
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1287
+   Ics:     ~-185.696nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.88 [C]
+M: TTN Chamber Temp
+   Tmp:      32.81 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       362
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1535
+   Ics:     ~-125.140nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.90 [C]
+M: TTN Chamber Temp
+   Tmp:      32.79 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       362
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1452
+   Ics:     ~-145.407nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.89 [C]
+M: TTN Chamber Temp
+   Tmp:      32.79 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       362
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1304
+   Ics:     ~-181.545nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.93 [C]
+M: TTN Chamber Temp
+   Tmp:      32.82 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       362
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1309
+   Ics:     ~-180.324nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.92 [C]
+M: TTN Chamber Temp
+   Tmp:      32.83 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       362
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1500
+   Ics:     ~-133.686nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.90 [C]
+M: TTN Chamber Temp
+   Tmp:      32.82 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       362
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1202
+   Ics:     ~-206.451nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.90 [C]
+M: TTN Chamber Temp
+   Tmp:      32.82 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       362
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1245
+   Ics:     ~-195.951nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.89 [C]
+M: TTN Chamber Temp
+   Tmp:      32.79 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       362
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1603
+   Ics:     ~-108.536nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.89 [C]
+M: TTN Chamber Temp
+   Tmp:      32.82 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       362
+M: TTN Temp
+   Vs:       369
+M: ADC
+   Val:      1297
+   Ics:     ~-183.254nA
+M: TIM2 PWM Out
+   DutyCyc:  % 21
+M: TTN Ambient Temp
+   Tmp:      33.90 [C]
+M: TTN Chamber Temp
+   Tmp:      32.81 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       361
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1327
+   Ics:     ~-175.929nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.93 [C]
+M: TTN Chamber Temp
+   Tmp:      32.81 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       361
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1164
+   Ics:     ~-215.729nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.92 [C]
+M: TTN Chamber Temp
+   Tmp:      32.82 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       361
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1392
+   Ics:     ~-160.057nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.92 [C]
+M: TTN Chamber Temp
+   Tmp:      32.83 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       361
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1519
+   Ics:     ~-129.047nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.93 [C]
+M: TTN Chamber Temp
+   Tmp:      32.81 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       361
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1400
+   Ics:     ~-158.104nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.92 [C]
+M: TTN Chamber Temp
+   Tmp:      32.83 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       361
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1519
+   Ics:     ~-129.047nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.95 [C]
+M: TTN Chamber Temp
+   Tmp:      32.83 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       361
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1265
+   Ics:     ~-191.068nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.92 [C]
+M: TTN Chamber Temp
+   Tmp:      32.85 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       361
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1363
+   Ics:     ~-167.138nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.93 [C]
+M: TTN Chamber Temp
+   Tmp:      32.85 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       361
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1337
+   Ics:     ~-173.487nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.92 [C]
+M: TTN Chamber Temp
+   Tmp:      32.82 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       361
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1256
+   Ics:     ~-193.265nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.95 [C]
+M: TTN Chamber Temp
+   Tmp:      32.86 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       361
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1418
+   Ics:     ~-153.709nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.95 [C]
+M: TTN Chamber Temp
+   Tmp:      32.85 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       360
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1554
+   Ics:     ~-120.501nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.93 [C]
+M: TTN Chamber Temp
+   Tmp:      32.85 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       360
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1262
+   Ics:     ~-191.800nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.95 [C]
+M: TTN Chamber Temp
+   Tmp:      32.86 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       360
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1359
+   Ics:     ~-168.115nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.96 [C]
+M: TTN Chamber Temp
+   Tmp:      32.86 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       360
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1578
+   Ics:     ~-114.641nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.93 [C]
+M: TTN Chamber Temp
+   Tmp:      32.87 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       360
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1448
+   Ics:     ~-146.383nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.97 [C]
+M: TTN Chamber Temp
+   Tmp:      32.87 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       360
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1289
+   Ics:     ~-185.207nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.95 [C]
+M: TTN Chamber Temp
+   Tmp:      32.89 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       360
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1446
+   Ics:     ~-146.872nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.96 [C]
+M: TTN Chamber Temp
+   Tmp:      32.87 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       360
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1553
+   Ics:     ~-120.745nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.96 [C]
+M: TTN Chamber Temp
+   Tmp:      32.87 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       360
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1373
+   Ics:     ~-164.697nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.97 [C]
+M: TTN Chamber Temp
+   Tmp:      32.86 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       360
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1313
+   Ics:     ~-179.347nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.96 [C]
+M: TTN Chamber Temp
+   Tmp:      32.90 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       360
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1271
+   Ics:     ~-189.603nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.97 [C]
+M: TTN Chamber Temp
+   Tmp:      32.89 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       360
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1311
+   Ics:     ~-179.835nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.99 [C]
+M: TTN Chamber Temp
+   Tmp:      32.85 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       360
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1506
+   Ics:     ~-132.221nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.96 [C]
+M: TTN Chamber Temp
+   Tmp:      32.90 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       360
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1295
+   Ics:     ~-183.742nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.97 [C]
+M: TTN Chamber Temp
+   Tmp:      32.86 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       360
+M: TTN Temp
+   Vs:       367
+M: ADC
+   Val:      1481
+   Ics:     ~-138.326nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      33.96 [C]
+M: TTN Chamber Temp
+   Tmp:      32.90 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       360
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1458
+   Ics:     ~-143.942nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.96 [C]
+M: TTN Chamber Temp
+   Tmp:      32.89 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       359
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1231
+   Ics:     ~-199.370nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.99 [C]
+M: TTN Chamber Temp
+   Tmp:      32.89 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       359
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1587
+   Ics:     ~-112.443nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.97 [C]
+M: TTN Chamber Temp
+   Tmp:      32.90 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       359
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1521
+   Ics:     ~-128.559nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.99 [C]
+M: TTN Chamber Temp
+   Tmp:      32.90 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       359
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1273
+   Ics:     ~-189.114nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.99 [C]
+M: TTN Chamber Temp
+   Tmp:      32.89 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       359
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1259
+   Ics:     ~-192.533nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.99 [C]
+M: TTN Chamber Temp
+   Tmp:      32.89 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       359
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1191
+   Ics:     ~-209.137nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.97 [C]
+M: TTN Chamber Temp
+   Tmp:      32.89 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       359
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1409
+   Ics:     ~-155.906nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.99 [C]
+M: TTN Chamber Temp
+   Tmp:      32.93 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       359
+M: TTN Temp
+   Vs:       369
+M: ADC
+   Val:      1384
+   Ics:     ~-162.011nA
+M: TIM2 PWM Out
+   DutyCyc:  % 21
+M: TTN Ambient Temp
+   Tmp:      33.99 [C]
+M: TTN Chamber Temp
+   Tmp:      32.92 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       359
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1394
+   Ics:     ~-159.569nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      33.99 [C]
+M: TTN Chamber Temp
+   Tmp:      32.92 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       359
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1609
+   Ics:     ~-107.071nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      34.00 [C]
+M: TTN Chamber Temp
+   Tmp:      32.92 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       359
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1369
+   Ics:     ~-165.673nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.99 [C]
+M: TTN Chamber Temp
+   Tmp:      32.92 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       359
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1919
+   Ics:     ~-31.377nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      34.00 [C]
+M: TTN Chamber Temp
+   Tmp:      32.92 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       359
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1273
+   Ics:     ~-189.114nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      34.00 [C]
+M: TTN Chamber Temp
+   Tmp:      32.93 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       359
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1379
+   Ics:     ~-163.232nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      34.02 [C]
+M: TTN Chamber Temp
+   Tmp:      32.92 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       359
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1406
+   Ics:     ~-156.639nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      33.97 [C]
+M: TTN Chamber Temp
+   Tmp:      32.93 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       359
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1369
+   Ics:     ~-165.673nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      34.00 [C]
+M: TTN Chamber Temp
+   Tmp:      32.93 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       359
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1518
+   Ics:     ~-129.291nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      34.02 [C]
+M: TTN Chamber Temp
+   Tmp:      32.95 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       358
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1351
+   Ics:     ~-170.068nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      34.02 [C]
+M: TTN Chamber Temp
+   Tmp:      32.95 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       358
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1556
+   Ics:     ~-120.012nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      34.03 [C]
+M: TTN Chamber Temp
+   Tmp:      32.93 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       358
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1403
+   Ics:     ~-157.371nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      34.02 [C]
+M: TTN Chamber Temp
+   Tmp:      32.95 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       358
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1240
+   Ics:     ~-197.172nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      34.02 [C]
+M: TTN Chamber Temp
+   Tmp:      32.93 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       358
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1478
+   Ics:     ~-139.058nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      34.03 [C]
+M: TTN Chamber Temp
+   Tmp:      32.93 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       358
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1408
+   Ics:     ~-156.150nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      34.02 [C]
+M: TTN Chamber Temp
+   Tmp:      32.95 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       358
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1245
+   Ics:     ~-195.951nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      34.00 [C]
+M: TTN Chamber Temp
+   Tmp:      32.95 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       358
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1404
+   Ics:     ~-157.127nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      34.03 [C]
+M: TTN Chamber Temp
+   Tmp:      32.96 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       358
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1340
+   Ics:     ~-172.754nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      34.00 [C]
+M: TTN Chamber Temp
+   Tmp:      32.96 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       358
+M: TTN Temp
+   Vs:       367
+M: ADC
+   Val:      1364
+   Ics:     ~-166.894nA
+M: TIM2 PWM Out
+   DutyCyc:  % 24
+M: TTN Ambient Temp
+   Tmp:      34.03 [C]
+M: TTN Chamber Temp
+   Tmp:      32.98 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       358
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1488
+   Ics:     ~-136.616nA
+M: TIM2 PWM Out
+   DutyCyc:  % 22
+M: TTN Ambient Temp
+   Tmp:      34.03 [C]
+M: TTN Chamber Temp
+   Tmp:      32.98 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       358
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1437
+   Ics:     ~-149.069nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      34.02 [C]
+M: TTN Chamber Temp
+   Tmp:      32.96 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       358
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1318
+   Ics:     ~-178.126nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      34.02 [C]
+M: TTN Chamber Temp
+   Tmp:      32.98 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       358
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1256
+   Ics:     ~-193.265nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      34.03 [C]
+M: TTN Chamber Temp
+   Tmp:      32.98 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       358
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1805
+   Ics:     ~-59.213nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      34.06 [C]
+M: TTN Chamber Temp
+   Tmp:      32.99 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       358
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1729
+   Ics:     ~-77.770nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      34.03 [C]
+M: TTN Chamber Temp
+   Tmp:      32.98 [C]
+M: TTN Readout Vs
+M: TTN Chem
+   Vs:       358
+M: TTN Temp
+   Vs:       368
+M: ADC
+   Val:      1285
+   Ics:     ~-186.184nA
+M: TIM2 PWM Out
+   DutyCyc:  % 23
+M: TTN Ambient Temp
+   Tmp:      34.03 [C]
+M: TTN Chamber Temp
+   Tmp:      32.98 [C]
+M: TIM2 PWM Out
+   DutyCyc:  %  0
