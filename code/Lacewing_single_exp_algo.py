@@ -1189,10 +1189,10 @@ def processing(exp_path, exp_data_current, exp_data_preproc, tinitial, tfinal, v
         n_active_pixels = idx_active.sum()
         drift = abs(chem_data_av_ma[0] - chem_data_av_ma[bounds_idx[1]])
         ttp_str = f'{ttp:.2f}' if (positive == 'positive') else 'n/a'
-        exp_data = {'Parameter': ['Experiment ID', 'Well', 'Active pixels', 'Drift (mV)', 'Result', 'TTP'],
+        well_data = {'Parameter': ['Experiment ID', 'Well', 'Active pixels', 'Drift (mV)', 'Result', 'TTP'],
                     'Data': [experiment_id, well_name, n_active_pixels, round(drift, 2), positive, ttp_str]}
         # Create DataFrame
-        exp_df = pd.DataFrame(exp_data)
+        well_df = pd.DataFrame(well_data)
 
         # ALL EXPERIMENTS SUMMARY
         well_summary[well_name] = {'time': time,
@@ -1203,7 +1203,7 @@ def processing(exp_path, exp_data_current, exp_data_preproc, tinitial, tfinal, v
                                    'result': positive,
                                    'ttp': ttp,
                                    'positive inflections idx': positive_infl_idx,
-                                   'table df': exp_df}
+                                   'table df': well_df}
 
         # PLOTS
         if visualise_plt:
@@ -1246,9 +1246,13 @@ def processing(exp_path, exp_data_current, exp_data_preproc, tinitial, tfinal, v
             ax = axs[4]
             ax[i].axis('tight')
             ax[i].axis('off')
-            tab = ax[i].table(cellText=exp_df.values, colLabels=exp_df.keys(), loc='center')
+            tab = ax[i].table(cellText=well_df.values, colLabels=well_df.keys(), loc='center')
             tab.set_fontsize(18)
             tab.scale(1.4, 1.4)
+
+    if visualise_plt:
+        axs[1, 0].get_shared_x_axes().join(*axs[1:4, 0])
+        axs[1, 1].get_shared_x_axes().join(*axs[1:4, 1])
 
     if visualise_plt or visualise_steps:
         plt.tight_layout()
@@ -1302,16 +1306,19 @@ def algo(exp_path, tinitial=540, tfinal=1140, visualise_preprocessing=False, sav
     exp_data_current = get_current_data(exp_data_unprocessed, settled_idx_top, settled_idx_bot, tcurrent)
     exp_data_preproc = preprocessing_update(exp_path, exp_data_current, exp_data_preproc, tinitial, visualise_plt=visualise_preprocessing, save_plt=save_preprocessing)
 
-    tcurrent = tfinal
-    exp_data_current = get_current_data(exp_data_unprocessed, settled_idx_top, settled_idx_bot, tcurrent)
-    exp_summary = processing(exp_path, exp_data_current, exp_data_preproc, tinitial, tfinal, visualise_plt=visualise_processing, save_plt=save_processing)
+    #times = np.arange(tinitial, tfinal+30, 3)
+    times = np.arange(tinitial, tfinal+30, 100)
+    # times = [tfinal+30]
+    current_result_top = 'negative'
+    current_result_bot = 'negative'
 
-    # for t<tinitial do noting - need to wait
-    # fot the first t>tinitial, do preprocessing initial
-
-    # for all the others, do update.
-
-    # fot t > tfinal do nothing
+    for tcurrent in times:
+        if current_result_top == 'negative' or current_result_bot == 'negative':
+            exp_data_current = get_current_data(exp_data_unprocessed, settled_idx_top, settled_idx_bot, tcurrent)
+            exp_summary = processing(exp_path, exp_data_current, exp_data_preproc, tinitial, tfinal, visualise_plt=visualise_processing, save_plt=save_processing)
+            current_result_top = exp_summary['well data']['Top Well']['result']
+            current_result_bot = exp_summary['well data']['Bot Well']['result']
+            print(f'current time: {tcurrent}, current result: {current_result_top, current_result_bot}')
 
     return exp_summary
 
@@ -1328,9 +1335,9 @@ if __name__ == "__main__":
     # exp_path = Path('..', 'data_files', '120520_4_10x_155')
     # exp_path = Path('..', 'data_files_v3', 'D20210319_E00_C00_F4500KHz_U_ST44_DNA')
     # exp_path = Path('..', 'data_files_v3', 'D20210319_E00_C00_F4500KHz_U_ST45_DNA')
-    out = algo(exp_path, visualise_preprocessing=False, save_preprocessing=False, visualise_processing=False, save_processing=False, version='v2')
-    for well_name, well_data in out['well data'].items():
-        print(well_data['table df'], end='\n')
+    out = algo(exp_path, visualise_preprocessing=False, save_preprocessing=False, visualise_processing=True, save_processing=False, version='v2')
+    # for well_name, well_data in out['well data'].items():
+    #     print(well_data['table df'], end='\n')
 
     # curr_path = Path('..', 'data_files')
     # experiments = [x for x in curr_path.iterdir() if x.is_dir()]
